@@ -11,8 +11,6 @@
 		6DC1980D219F27B7BFFE4BE9 /* Pods_QuoterraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34D2D6C2F08AE8173D69DD8 /* Pods_QuoterraUITests.framework */; };
 		905C69C157CF59E08D68820C /* Pods_Quoterra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DAB163330C38C6A3AF1373 /* Pods_Quoterra.framework */; };
 		D0308F771E59CF83000E63F2 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F761E59CF83000E63F2 /* Quote.swift */; };
-		D0308F7B1E5A05FB000E63F2 /* SQLiteDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F7A1E5A05FB000E63F2 /* SQLiteDBManager.swift */; };
-		D03E4BAF1E5A984A00E11033 /* QuoteCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E4BAE1E5A984A00E11033 /* QuoteCRUD.swift */; };
 		D03E4BB11E5A999E00E11033 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E4BB01E5A999E00E11033 /* Utilities.swift */; };
 		D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0971E4406AF00AAA981 /* AppDelegate.swift */; };
 		D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0991E4406AF00AAA981 /* ViewController.swift */; };
@@ -23,6 +21,8 @@
 		D05AE0B81E4406B000AAA981 /* QuoterraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0B71E4406B000AAA981 /* QuoterraUITests.swift */; };
 		D05AE0C71E4406ED00AAA981 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */; };
 		D05AE0C91E44090300AAA981 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0C81E44090300AAA981 /* DBManager.swift */; };
+		D0F9339C1E5AB8B200318F3B /* QuoteCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */; };
+		D0F9339E1E5AB96A00318F3B /* SQLiteDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F9339D1E5AB96A00318F3B /* SQLiteDBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,6 @@
 		A34D2D6C2F08AE8173D69DD8 /* Pods_QuoterraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoterraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4E2E0D642FC3CE8D35EB42 /* Pods-QuoterraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoterraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D0308F761E59CF83000E63F2 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		D0308F7A1E5A05FB000E63F2 /* SQLiteDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDBManager.swift; path = "../../../individual-assignment/Quotify/SQLiteDBManager.swift"; sourceTree = "<group>"; };
-		D03E4BAE1E5A984A00E11033 /* QuoteCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuoteCRUD.swift; path = "../../../individual-assignment/Quotify/QuoteCRUD.swift"; sourceTree = "<group>"; };
 		D03E4BB01E5A999E00E11033 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "../../../individual-assignment/Quotify/Utilities.swift"; sourceTree = "<group>"; };
 		D05AE0941E4406AF00AAA981 /* Quoterra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quoterra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05AE0971E4406AF00AAA981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		D05AE0B91E4406B000AAA981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D05AE0C81E44090300AAA981 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCRUD.swift; sourceTree = "<group>"; };
+		D0F9339D1E5AB96A00318F3B /* SQLiteDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDBManager.swift; sourceTree = "<group>"; };
 		DBFA267FC623B2A405ACB4F8 /* Pods-QuoterraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoterraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +126,7 @@
 		D0308F781E5A058D000E63F2 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				D03E4BAE1E5A984A00E11033 /* QuoteCRUD.swift */,
+				D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 		D0308F791E5A05E6000E63F2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				D0308F7A1E5A05FB000E63F2 /* SQLiteDBManager.swift */,
+				D0F9339D1E5AB96A00318F3B /* SQLiteDBManager.swift */,
 				D03E4BB01E5A999E00E11033 /* Utilities.swift */,
 			);
 			name = Utilities;
@@ -493,8 +493,8 @@
 				D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */,
 				D03E4BB11E5A999E00E11033 /* Utilities.swift in Sources */,
 				D05AE0C91E44090300AAA981 /* DBManager.swift in Sources */,
-				D03E4BAF1E5A984A00E11033 /* QuoteCRUD.swift in Sources */,
-				D0308F7B1E5A05FB000E63F2 /* SQLiteDBManager.swift in Sources */,
+				D0F9339E1E5AB96A00318F3B /* SQLiteDBManager.swift in Sources */,
+				D0F9339C1E5AB8B200318F3B /* QuoteCRUD.swift in Sources */,
 				D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

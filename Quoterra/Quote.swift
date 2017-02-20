@@ -12,11 +12,14 @@ import os.log
 class Quote {
     
     //MARK: properties
-    var quoteID:Int64
-    var quotes:String
-    var quoteAuthor:String
-    var quoteTopic:String
-    var quoteFavourite:Bool
+    var quoteID:Int64?
+    var quotes:String?
+    var quoteAuthor:String?
+    var quoteTopic:String?
+    var quoteFavourite:Bool?
+    
+    init?(){
+    }
 
     //MARK: Initialization
     init?(quoteID: Int64, quotes: String, quoteAuthor: String, quoteTopic: String, quoteFavourite: Bool){
