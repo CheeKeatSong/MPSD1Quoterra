@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueSkyDarkNightBackground" id="HwR-NR-EPw" customClass="BackgroundImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
                         <connections>
                             <outlet property="dataSource" destination="Npj-vO-Fty" id="ZFe-9p-aUp"/>
                             <outlet property="delegate" destination="Npj-vO-Fty" id="kUU-4P-Xa7"/>
@@ -28,7 +32,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bck-uI-C63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="-980"/>
+            <point key="canvasLocation" x="396" y="-980.05997001499259"/>
         </scene>
         <!--Quotepedia-->
         <scene sceneID="yPS-py-nYb">
@@ -38,6 +42,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueSkyDarkNightBackground" id="hot-c6-oUn">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
                         <connections>
                             <outlet property="dataSource" destination="94C-Sn-0iX" id="RAR-dJ-Me5"/>
                             <outlet property="delegate" destination="94C-Sn-0iX" id="hs1-AX-SEY"/>
@@ -49,7 +57,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYn-8e-1J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="-198"/>
+            <point key="canvasLocation" x="396" y="-198.35082458770617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3nc-Mp-lel">
+            <objects>
+                <viewController id="p7H-PS-Soz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r2P-2c-Wfk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vAa-sE-DZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mhz-Gw-U96">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueSkyDarkNightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xig-W2-kDj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iP-nB-PEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1373.5999999999999" y="-198.35082458770617"/>
         </scene>
         <!--Favourite-->
         <scene sceneID="YOi-bK-L9h">
@@ -59,6 +91,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueSkyDarkNightBackground" id="LYZ-5R-gh6">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
                         <connections>
                             <outlet property="dataSource" destination="lPA-tq-3HQ" id="Xwd-w7-Bfe"/>
                             <outlet property="delegate" destination="lPA-tq-3HQ" id="yjr-hC-cyN"/>
@@ -70,7 +106,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45d-n2-qzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="564"/>
+            <point key="canvasLocation" x="396" y="563.56821589205401"/>
         </scene>
         <!--Quote Controller-->
         <scene sceneID="Np3-be-HoD">
@@ -93,6 +129,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BlueSkyDarkNightBackground" width="282" height="500"/>
         <image name="dictionary" width="32" height="32"/>
         <image name="home" width="32" height="32"/>
         <image name="star" width="32" height="32"/>
