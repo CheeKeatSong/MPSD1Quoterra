@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Quoterra.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>030207710D87736FC8589F49A99B8145</key>
+		<key>33FC3BBDD66FCA9F34914D77C2E1781A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0CF7701C1098F45846B5E77C44936F18</key>
+		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>7FD22A6E0F2CB0E76F7FE1727664970F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE1C0B4E393975D5093AAD82110058CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,14 +1,17 @@
 PODS:
+  - IQKeyboardManagerSwift (4.0.8)
   - SQLite.swift (0.11.2):
     - SQLite.swift/standard (= 0.11.2)
   - SQLite.swift/standard (0.11.2)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - SQLite.swift
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
-PODFILE CHECKSUM: 3a44102247f8d39aa0eca8f74389b242af79af28
+PODFILE CHECKSUM: 4655362b45cea6bee3cba17a8541f774227e3b52
 
 COCOAPODS: 1.2.0
