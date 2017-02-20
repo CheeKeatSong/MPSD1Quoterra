@@ -1,0 +1,6 @@
+framework module Pods_QuoterraTests {
+  umbrella header "Pods-QuoterraTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

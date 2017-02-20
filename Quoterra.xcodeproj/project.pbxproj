@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A083990289B218F07545693 /* Pods_QuoterraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528C3C4EF40C3718AD13F307 /* Pods_QuoterraTests.framework */; };
+		6DC1980D219F27B7BFFE4BE9 /* Pods_QuoterraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34D2D6C2F08AE8173D69DD8 /* Pods_QuoterraUITests.framework */; };
+		905C69C157CF59E08D68820C /* Pods_Quoterra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DAB163330C38C6A3AF1373 /* Pods_Quoterra.framework */; };
+		D0308F771E59CF83000E63F2 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F761E59CF83000E63F2 /* Quote.swift */; };
+		D0308F7B1E5A05FB000E63F2 /* SQLiteDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F7A1E5A05FB000E63F2 /* SQLiteDBManager.swift */; };
+		D03E4BAF1E5A984A00E11033 /* QuoteCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E4BAE1E5A984A00E11033 /* QuoteCRUD.swift */; };
+		D03E4BB11E5A999E00E11033 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E4BB01E5A999E00E11033 /* Utilities.swift */; };
+		D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0971E4406AF00AAA981 /* AppDelegate.swift */; };
+		D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0991E4406AF00AAA981 /* ViewController.swift */; };
+		D05AE09D1E4406AF00AAA981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05AE09B1E4406AF00AAA981 /* Main.storyboard */; };
+		D05AE09F1E4406AF00AAA981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05AE09E1E4406AF00AAA981 /* Assets.xcassets */; };
+		D05AE0A21E4406AF00AAA981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05AE0A01E4406AF00AAA981 /* LaunchScreen.storyboard */; };
+		D05AE0AD1E4406AF00AAA981 /* QuoterraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0AC1E4406AF00AAA981 /* QuoterraTests.swift */; };
+		D05AE0B81E4406B000AAA981 /* QuoterraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0B71E4406B000AAA981 /* QuoterraUITests.swift */; };
+		D05AE0C71E4406ED00AAA981 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */; };
+		D05AE0C91E44090300AAA981 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0C81E44090300AAA981 /* DBManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D05AE0A91E4406AF00AAA981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05AE08C1E4406AF00AAA981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05AE0931E4406AF00AAA981;
+			remoteInfo = Quoterra;
+		};
+		D05AE0B41E4406B000AAA981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05AE08C1E4406AF00AAA981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05AE0931E4406AF00AAA981;
+			remoteInfo = Quoterra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0622C6CC67AB3FF566A3FF42 /* Pods-Quoterra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quoterra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quoterra/Pods-Quoterra.debug.xcconfig"; sourceTree = "<group>"; };
+		251FEE041209FC7470247BAA /* Pods-QuoterraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoterraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuoterraTests/Pods-QuoterraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		271162AF7437EA28BD1799E5 /* Pods-QuoterraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoterraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuoterraTests/Pods-QuoterraTests.release.xcconfig"; sourceTree = "<group>"; };
+		43DAB163330C38C6A3AF1373 /* Pods_Quoterra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quoterra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		528C3C4EF40C3718AD13F307 /* Pods_QuoterraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoterraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC54D9983A4B75474F49D8B /* Pods-Quoterra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quoterra.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quoterra/Pods-Quoterra.release.xcconfig"; sourceTree = "<group>"; };
+		A34D2D6C2F08AE8173D69DD8 /* Pods_QuoterraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoterraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4E2E0D642FC3CE8D35EB42 /* Pods-QuoterraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoterraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D0308F761E59CF83000E63F2 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		D0308F7A1E5A05FB000E63F2 /* SQLiteDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDBManager.swift; path = "../../../individual-assignment/Quotify/SQLiteDBManager.swift"; sourceTree = "<group>"; };
+		D03E4BAE1E5A984A00E11033 /* QuoteCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuoteCRUD.swift; path = "../../../individual-assignment/Quotify/QuoteCRUD.swift"; sourceTree = "<group>"; };
+		D03E4BB01E5A999E00E11033 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "../../../individual-assignment/Quotify/Utilities.swift"; sourceTree = "<group>"; };
+		D05AE0941E4406AF00AAA981 /* Quoterra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quoterra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05AE0971E4406AF00AAA981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D05AE0991E4406AF00AAA981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D05AE09C1E4406AF00AAA981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D05AE09E1E4406AF00AAA981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D05AE0A11E4406AF00AAA981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D05AE0A31E4406AF00AAA981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05AE0A81E4406AF00AAA981 /* QuoterraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoterraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05AE0AC1E4406AF00AAA981 /* QuoterraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoterraTests.swift; sourceTree = "<group>"; };
+		D05AE0AE1E4406AF00AAA981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05AE0B31E4406B000AAA981 /* QuoterraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoterraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05AE0B71E4406B000AAA981 /* QuoterraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoterraUITests.swift; sourceTree = "<group>"; };
+		D05AE0B91E4406B000AAA981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D05AE0C81E44090300AAA981 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		DBFA267FC623B2A405ACB4F8 /* Pods-QuoterraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoterraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D05AE0911E4406AF00AAA981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05AE0C71E4406ED00AAA981 /* libsqlite3.tbd in Frameworks */,
+				905C69C157CF59E08D68820C /* Pods_Quoterra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05AE0A51E4406AF00AAA981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A083990289B218F07545693 /* Pods_QuoterraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05AE0B01E4406B000AAA981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC1980D219F27B7BFFE4BE9 /* Pods_QuoterraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093A447C3912D2AA95848950 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0622C6CC67AB3FF566A3FF42 /* Pods-Quoterra.debug.xcconfig */,
+				8EC54D9983A4B75474F49D8B /* Pods-Quoterra.release.xcconfig */,
+				251FEE041209FC7470247BAA /* Pods-QuoterraTests.debug.xcconfig */,
+				271162AF7437EA28BD1799E5 /* Pods-QuoterraTests.release.xcconfig */,
+				DBFA267FC623B2A405ACB4F8 /* Pods-QuoterraUITests.debug.xcconfig */,
+				AA4E2E0D642FC3CE8D35EB42 /* Pods-QuoterraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0308F751E59CF60000E63F2 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0308F761E59CF83000E63F2 /* Quote.swift */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		D0308F781E5A058D000E63F2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D03E4BAE1E5A984A00E11033 /* QuoteCRUD.swift */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		D0308F791E5A05E6000E63F2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0308F7A1E5A05FB000E63F2 /* SQLiteDBManager.swift */,
+				D03E4BB01E5A999E00E11033 /* Utilities.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D05AE08B1E4406AF00AAA981 = {
+			isa = PBXGroup;
+			children = (
+				D05AE0961E4406AF00AAA981 /* Quoterra */,
+				D05AE0AB1E4406AF00AAA981 /* QuoterraTests */,
+				D05AE0B61E4406B000AAA981 /* QuoterraUITests */,
+				D05AE0951E4406AF00AAA981 /* Products */,
+				D05AE0C51E4406ED00AAA981 /* Frameworks */,
+				093A447C3912D2AA95848950 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D05AE0951E4406AF00AAA981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D05AE0941E4406AF00AAA981 /* Quoterra.app */,
+				D05AE0A81E4406AF00AAA981 /* QuoterraTests.xctest */,
+				D05AE0B31E4406B000AAA981 /* QuoterraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D05AE0961E4406AF00AAA981 /* Quoterra */ = {
+			isa = PBXGroup;
+			children = (
+				D0308F751E59CF60000E63F2 /* Data Model */,
+				D0308F781E5A058D000E63F2 /* Dashboard */,
+				D0308F791E5A05E6000E63F2 /* Utilities */,
+				D05AE0991E4406AF00AAA981 /* ViewController.swift */,
+				D05AE0971E4406AF00AAA981 /* AppDelegate.swift */,
+				D05AE09B1E4406AF00AAA981 /* Main.storyboard */,
+				D05AE09E1E4406AF00AAA981 /* Assets.xcassets */,
+				D05AE0A01E4406AF00AAA981 /* LaunchScreen.storyboard */,
+				D05AE0A31E4406AF00AAA981 /* Info.plist */,
+				D05AE0C81E44090300AAA981 /* DBManager.swift */,
+			);
+			path = Quoterra;
+			sourceTree = "<group>";
+		};
+		D05AE0AB1E4406AF00AAA981 /* QuoterraTests */ = {
+			isa = PBXGroup;
+			children = (
+				D05AE0AC1E4406AF00AAA981 /* QuoterraTests.swift */,
+				D05AE0AE1E4406AF00AAA981 /* Info.plist */,
+			);
+			path = QuoterraTests;
+			sourceTree = "<group>";
+		};
+		D05AE0B61E4406B000AAA981 /* QuoterraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D05AE0B71E4406B000AAA981 /* QuoterraUITests.swift */,
+				D05AE0B91E4406B000AAA981 /* Info.plist */,
+			);
+			path = QuoterraUITests;
+			sourceTree = "<group>";
+		};
+		D05AE0C51E4406ED00AAA981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */,
+				43DAB163330C38C6A3AF1373 /* Pods_Quoterra.framework */,
+				528C3C4EF40C3718AD13F307 /* Pods_QuoterraTests.framework */,
+				A34D2D6C2F08AE8173D69DD8 /* Pods_QuoterraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D05AE0931E4406AF00AAA981 /* Quoterra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05AE0BC1E4406B000AAA981 /* Build configuration list for PBXNativeTarget "Quoterra" */;
+			buildPhases = (
+				40AAFBA0CD423E736B0F8069 /* [CP] Check Pods Manifest.lock */,
+				D05AE0901E4406AF00AAA981 /* Sources */,
+				D05AE0911E4406AF00AAA981 /* Frameworks */,
+				D05AE0921E4406AF00AAA981 /* Resources */,
+				368369FA130BD6D29D236F1F /* [CP] Embed Pods Frameworks */,
+				D131BE99494D045CCE72AD3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quoterra;
+			productName = Quoterra;
+			productReference = D05AE0941E4406AF00AAA981 /* Quoterra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D05AE0A71E4406AF00AAA981 /* QuoterraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05AE0BF1E4406B000AAA981 /* Build configuration list for PBXNativeTarget "QuoterraTests" */;
+			buildPhases = (
+				92A095D8691DAABDB671006E /* [CP] Check Pods Manifest.lock */,
+				D05AE0A41E4406AF00AAA981 /* Sources */,
+				D05AE0A51E4406AF00AAA981 /* Frameworks */,
+				D05AE0A61E4406AF00AAA981 /* Resources */,
+				3D7E1A53FC2C9DA954573807 /* [CP] Embed Pods Frameworks */,
+				6429861C6EC916DEDA142DC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D05AE0AA1E4406AF00AAA981 /* PBXTargetDependency */,
+			);
+			name = QuoterraTests;
+			productName = QuoterraTests;
+			productReference = D05AE0A81E4406AF00AAA981 /* QuoterraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D05AE0B21E4406B000AAA981 /* QuoterraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05AE0C21E4406B000AAA981 /* Build configuration list for PBXNativeTarget "QuoterraUITests" */;
+			buildPhases = (
+				A16FA108199FC1F97DCA821F /* [CP] Check Pods Manifest.lock */,
+				D05AE0AF1E4406B000AAA981 /* Sources */,
+				D05AE0B01E4406B000AAA981 /* Frameworks */,
+				D05AE0B11E4406B000AAA981 /* Resources */,
+				DB43E0FD434691F5299C4A4E /* [CP] Embed Pods Frameworks */,
+				B145A3FA0DBD9DC7A9782924 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D05AE0B51E4406B000AAA981 /* PBXTargetDependency */,
+			);
+			name = QuoterraUITests;
+			productName = QuoterraUITests;
+			productReference = D05AE0B31E4406B000AAA981 /* QuoterraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D05AE08C1E4406AF00AAA981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Song Chee Keat";
+				TargetAttributes = {
+					D05AE0931E4406AF00AAA981 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D05AE0A71E4406AF00AAA981 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D05AE0931E4406AF00AAA981;
+					};
+					D05AE0B21E4406B000AAA981 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D05AE0931E4406AF00AAA981;
+					};
+				};
+			};
+			buildConfigurationList = D05AE08F1E4406AF00AAA981 /* Build configuration list for PBXProject "Quoterra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D05AE08B1E4406AF00AAA981;
+			productRefGroup = D05AE0951E4406AF00AAA981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D05AE0931E4406AF00AAA981 /* Quoterra */,
+				D05AE0A71E4406AF00AAA981 /* QuoterraTests */,
+				D05AE0B21E4406B000AAA981 /* QuoterraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D05AE0921E4406AF00AAA981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05AE0A21E4406AF00AAA981 /* LaunchScreen.storyboard in Resources */,
+				D05AE09F1E4406AF00AAA981 /* Assets.xcassets in Resources */,
+				D05AE09D1E4406AF00AAA981 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05AE0A61E4406AF00AAA981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05AE0B11E4406B000AAA981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		368369FA130BD6D29D236F1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quoterra/Pods-Quoterra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D7E1A53FC2C9DA954573807 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuoterraTests/Pods-QuoterraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40AAFBA0CD423E736B0F8069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6429861C6EC916DEDA142DC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuoterraTests/Pods-QuoterraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A095D8691DAABDB671006E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A16FA108199FC1F97DCA821F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B145A3FA0DBD9DC7A9782924 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D131BE99494D045CCE72AD3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quoterra/Pods-Quoterra-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB43E0FD434691F5299C4A4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D05AE0901E4406AF00AAA981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0308F771E59CF83000E63F2 /* Quote.swift in Sources */,
+				D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */,
+				D03E4BB11E5A999E00E11033 /* Utilities.swift in Sources */,
+				D05AE0C91E44090300AAA981 /* DBManager.swift in Sources */,
+				D03E4BAF1E5A984A00E11033 /* QuoteCRUD.swift in Sources */,
+				D0308F7B1E5A05FB000E63F2 /* SQLiteDBManager.swift in Sources */,
+				D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05AE0A41E4406AF00AAA981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05AE0AD1E4406AF00AAA981 /* QuoterraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05AE0AF1E4406B000AAA981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05AE0B81E4406B000AAA981 /* QuoterraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D05AE0AA1E4406AF00AAA981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05AE0931E4406AF00AAA981 /* Quoterra */;
+			targetProxy = D05AE0A91E4406AF00AAA981 /* PBXContainerItemProxy */;
+		};
+		D05AE0B51E4406B000AAA981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05AE0931E4406AF00AAA981 /* Quoterra */;
+			targetProxy = D05AE0B41E4406B000AAA981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D05AE09B1E4406AF00AAA981 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05AE09C1E4406AF00AAA981 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D05AE0A01E4406AF00AAA981 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05AE0A11E4406AF00AAA981 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D05AE0BA1E4406B000AAA981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D05AE0BB1E4406B000AAA981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D05AE0BD1E4406B000AAA981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0622C6CC67AB3FF566A3FF42 /* Pods-Quoterra.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quoterra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sck.Quoterra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D05AE0BE1E4406B000AAA981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC54D9983A4B75474F49D8B /* Pods-Quoterra.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quoterra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sck.Quoterra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D05AE0C01E4406B000AAA981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251FEE041209FC7470247BAA /* Pods-QuoterraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuoterraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sck.QuoterraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quoterra.app/Quoterra";
+			};
+			name = Debug;
+		};
+		D05AE0C11E4406B000AAA981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271162AF7437EA28BD1799E5 /* Pods-QuoterraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuoterraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sck.QuoterraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quoterra.app/Quoterra";
+			};
+			name = Release;
+		};
+		D05AE0C31E4406B000AAA981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFA267FC623B2A405ACB4F8 /* Pods-QuoterraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuoterraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sck.QuoterraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Quoterra;
+			};
+			name = Debug;
+		};
+		D05AE0C41E4406B000AAA981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4E2E0D642FC3CE8D35EB42 /* Pods-QuoterraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuoterraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sck.QuoterraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Quoterra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D05AE08F1E4406AF00AAA981 /* Build configuration list for PBXProject "Quoterra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05AE0BA1E4406B000AAA981 /* Debug */,
+				D05AE0BB1E4406B000AAA981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D05AE0BC1E4406B000AAA981 /* Build configuration list for PBXNativeTarget "Quoterra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05AE0BD1E4406B000AAA981 /* Debug */,
+				D05AE0BE1E4406B000AAA981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D05AE0BF1E4406B000AAA981 /* Build configuration list for PBXNativeTarget "QuoterraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05AE0C01E4406B000AAA981 /* Debug */,
+				D05AE0C11E4406B000AAA981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D05AE0C21E4406B000AAA981 /* Build configuration list for PBXNativeTarget "QuoterraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05AE0C31E4406B000AAA981 /* Debug */,
+				D05AE0C41E4406B000AAA981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D05AE08C1E4406AF00AAA981 /* Project object */;
+}

@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0853A3C20EB261B0F1B3D5DC96A24356 /* Pods-QuoterraTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB4B3E74958FF644ECE50950D406671 /* Pods-QuoterraTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DDE0C8B04734FECC061B3C22021AC8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1241219E24B0C43396A7460571CC1294 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */; };
+		1D08A95C51FABB9FF7AAC5267C94D1A0 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7855DE178D22988512E88C68325BE /* Collation.swift */; };
+		1EF510E0A54C7E956C5DDF0EEC714CD7 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */; };
+		25807EE76639161E150E746ADE37971F /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */; };
+		2B2454926C6EA147B4E63BD26A71568C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */; };
+		2D11432F6DA0E36212DEAF237E2D474B /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */; };
+		2D4E46A4D90C57FF280A0590359F7833 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F8223C4DCF0FB7E387A771A8ACE3995 /* Pods-QuoterraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB322899AD912000E4534FCCF96985D4 /* Pods-QuoterraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE64076213F84A3B77D64769A4E3C93 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */; };
+		43D30F592EC3F90BA04E4517BCADBC85 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */; };
+		55A7BA91BB8776C74B8EFEC45BDD860A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5BCF348FA77647867F02DF16F75977F0 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61FD9DCC118E2A5AB0BAD95573BBC182 /* Pods-QuoterraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB11E6D17EB25B7AF1E15A7AAC58DCC /* Pods-QuoterraTests-dummy.m */; };
+		65ECAD64E56757E1E1EC3547D4EBED5E /* Pods-Quoterra-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D1B00F359C39E79E237C420C5E99C /* Pods-Quoterra-dummy.m */; };
+		6E8FA52CD9A0077FE6322A0665395FFC /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */; };
+		6F15D344E54D47ADEB32D784DCF9F46C /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73F87C17DB514F1C5222A877E48B9D9F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA86AD441076D928D0621530CD5E745 /* Operators.swift */; };
+		775B27D877C930E90A15C96696675210 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */; };
+		7FD0CA0F44AFDE6E09F4BD3F23E9D00A /* Pods-QuoterraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6397C7C351CEFDE3643AFFA9B1B98B7 /* Pods-QuoterraUITests-dummy.m */; };
+		87BD2D8B8B41B44CE89EA41234624FAB /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */; };
+		9856FCA2426F3E35BF2BDB591CC71E00 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C2054E4FF36D5D19AF3A53C2F03FAC49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C2F4448174D230B8688769F413EECCFF /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */; };
+		C5570934FA467488E24936E1C606FBBD /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */; };
+		D4D3430442E818EE417654DCBD272111 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */; };
+		D54EDF227BCA4B715BE5794FA7911642 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */; };
+		DA8EAB2074781F3721D192AE876FFA11 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680617B7B3999D016982CD479DADCCB0 /* Blob.swift */; };
+		DC7F105BC202899691D7F38A38FA1FE2 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */; };
+		E292E8FA746E00EFA29250E9D4B8DCAF /* Pods-Quoterra-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 691EE1A4982C5124DE00C27DEE7BDC6E /* Pods-Quoterra-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9692BB555369148F5F08739E04BF559 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */; };
+		F055179629866396B9E71E3F00C9B455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F4465A9962AF79E4EF20A7FD053F0C8B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A7A841DB798B8C1A9D164C9F47EACB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 030207710D87736FC8589F49A99B8145;
+			remoteInfo = SQLite.swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0669AAC8F12EC91905484C166848B64B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E6A6EAA4F27D45E8EA5AF168FF6DC1 /* Pods-QuoterraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuoterraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		0F9D1B00F359C39E79E237C420C5E99C /* Pods-Quoterra-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Quoterra-dummy.m"; sourceTree = "<group>"; };
+		12949B7857E951CAD75AEC2F3B9C79CD /* Pods-Quoterra-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Quoterra-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A1AFCAA1D03B24971D0B4E947A6B5B4 /* Pods-Quoterra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quoterra.release.xcconfig"; sourceTree = "<group>"; };
+		1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		1DB11E6D17EB25B7AF1E15A7AAC58DCC /* Pods-QuoterraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuoterraTests-dummy.m"; sourceTree = "<group>"; };
+		1EC3C1E6C3B57B46326B94BAB568B649 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		2429E7150557F013951DCC9E2D3CA03E /* Pods-Quoterra-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quoterra-frameworks.sh"; sourceTree = "<group>"; };
+		2522145D480491DE8B2018602C8F4417 /* Pods-QuoterraUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuoterraUITests.modulemap"; sourceTree = "<group>"; };
+		25E0A01098295BEA1798D70BB2D03576 /* Pods-Quoterra-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quoterra-resources.sh"; sourceTree = "<group>"; };
+		27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		2ADBC41A50951F3B441E11E9C53E23B7 /* Pods-QuoterraTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuoterraTests.modulemap"; sourceTree = "<group>"; };
+		2B26320E25554B37547308F96BC358E7 /* Pods-QuoterraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuoterraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		3195B836BB147E2A3D595397174C2DC8 /* Pods-QuoterraUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuoterraUITests-resources.sh"; sourceTree = "<group>"; };
+		348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		35168822A3AFA086093637F57AD0FB26 /* Pods-QuoterraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuoterraTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		35F429F138C8362395DA8B0D159DED6B /* Pods-Quoterra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quoterra.debug.xcconfig"; sourceTree = "<group>"; };
+		3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		53FC7760C55E6A7E0D3A56B9591D30BA /* Pods-Quoterra-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Quoterra-acknowledgements.plist"; sourceTree = "<group>"; };
+		5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		671EAFC4CB35DFF40B140EE5C0B2CDF2 /* Pods-Quoterra.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Quoterra.modulemap"; sourceTree = "<group>"; };
+		680617B7B3999D016982CD479DADCCB0 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		68C9F6B9E511971E612B7701D870765A /* Pods-QuoterraTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuoterraTests-frameworks.sh"; sourceTree = "<group>"; };
+		691EE1A4982C5124DE00C27DEE7BDC6E /* Pods-Quoterra-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Quoterra-umbrella.h"; sourceTree = "<group>"; };
+		6FA777E09E122DCBC11532E082494E84 /* Pods-QuoterraUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuoterraUITests-frameworks.sh"; sourceTree = "<group>"; };
+		742EDC7F4E42C2632C3E361C26112A82 /* Pods_QuoterraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuoterraUITests.framework; path = "Pods-QuoterraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7636D2CF334557E33230775F83D3334D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7967964259DF7DBE5DC362BA626E4BB2 /* Pods_Quoterra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Quoterra.framework; path = "Pods-Quoterra.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D95680245793A6818DED28B43B0299E /* Pods-QuoterraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuoterraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF9DC971100F9CF7ED7FFB47F6AB74C /* Pods_QuoterraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuoterraTests.framework; path = "Pods-QuoterraTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		8BB4B3E74958FF644ECE50950D406671 /* Pods-QuoterraTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuoterraTests-umbrella.h"; sourceTree = "<group>"; };
+		937A2874C9FEDCA64878ABB4C8525430 /* Pods-QuoterraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuoterraTests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		9EA6D2CA6E764D94AA75CB423342608F /* Pods-QuoterraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuoterraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9F0C356C442AAF154AC365EEEFDF14DE /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		A3CD36593371929706E8A4F9D22E650C /* Pods-QuoterraTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuoterraTests-resources.sh"; sourceTree = "<group>"; };
+		AD915D8E8A83C651C4F0C80A3114C98E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		BDA86AD441076D928D0621530CD5E745 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		CA3ED8D54211455DE25A4DA036694445 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		D7B7855DE178D22988512E88C68325BE /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		DFFEEDFD728CE0A9004FAA4F1A9B72CF /* Pods-QuoterraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuoterraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6397C7C351CEFDE3643AFFA9B1B98B7 /* Pods-QuoterraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuoterraUITests-dummy.m"; sourceTree = "<group>"; };
+		E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		E93CFF14D6D50DE31F5E7B9F989AC000 /* Pods-QuoterraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuoterraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB322899AD912000E4534FCCF96985D4 /* Pods-QuoterraUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuoterraUITests-umbrella.h"; sourceTree = "<group>"; };
+		FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		567DE0B6C3CF4B4C9F7414EB5E8D1E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F055179629866396B9E71E3F00C9B455 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8604170991ABA5F2B1F9578B38BF0E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2054E4FF36D5D19AF3A53C2F03FAC49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2619A6F9BBC6AC24953B8689B1AAB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DDE0C8B04734FECC061B3C22021AC8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2956D4F885349A24CA90DDCE4498AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A7BA91BB8776C74B8EFEC45BDD860A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CE5F9160B067C829D364E72878D0583 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EC3C1E6C3B57B46326B94BAB568B649 /* Info.plist */,
+				1D7DA9FB08FD2A913967F0D7996B8701 /* SQLite.swift.modulemap */,
+				88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */,
+				2D30459F9DC30876AF6C299D26C7CE48 /* SQLite.swift-dummy.m */,
+				CA3ED8D54211455DE25A4DA036694445 /* SQLite.swift-prefix.pch */,
+				27B2D491F0A9B062233011B873DC118C /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		311AB1E2B8E74F7A0F97E97076DAE813 /* Pods-QuoterraTests */ = {
+			isa = PBXGroup;
+			children = (
+				7636D2CF334557E33230775F83D3334D /* Info.plist */,
+				2ADBC41A50951F3B441E11E9C53E23B7 /* Pods-QuoterraTests.modulemap */,
+				9EA6D2CA6E764D94AA75CB423342608F /* Pods-QuoterraTests-acknowledgements.markdown */,
+				35168822A3AFA086093637F57AD0FB26 /* Pods-QuoterraTests-acknowledgements.plist */,
+				1DB11E6D17EB25B7AF1E15A7AAC58DCC /* Pods-QuoterraTests-dummy.m */,
+				68C9F6B9E511971E612B7701D870765A /* Pods-QuoterraTests-frameworks.sh */,
+				A3CD36593371929706E8A4F9D22E650C /* Pods-QuoterraTests-resources.sh */,
+				8BB4B3E74958FF644ECE50950D406671 /* Pods-QuoterraTests-umbrella.h */,
+				7D95680245793A6818DED28B43B0299E /* Pods-QuoterraTests.debug.xcconfig */,
+				937A2874C9FEDCA64878ABB4C8525430 /* Pods-QuoterraTests.release.xcconfig */,
+			);
+			name = "Pods-QuoterraTests";
+			path = "Target Support Files/Pods-QuoterraTests";
+			sourceTree = "<group>";
+		};
+		42A565AFFAD6D5669C3E9A617B18206F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BF538A5818A9423DCAFBA3FE993650B /* SQLite.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BF538A5818A9423DCAFBA3FE993650B /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */,
+				0CE5F9160B067C829D364E72878D0583 /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		6E4CDA0705C72EBBEAC4EAD992E1850C /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				23E934E5F923C9742E63347D5512C322 /* AggregateFunctions.swift */,
+				680617B7B3999D016982CD479DADCCB0 /* Blob.swift */,
+				D7B7855DE178D22988512E88C68325BE /* Collation.swift */,
+				CCF813C6D3C0824E1BCFDACADE6109F5 /* Connection.swift */,
+				60FAE93532FD5578A02AF3CC523A3408 /* CoreFunctions.swift */,
+				348491EAD9C18B0EEB2E855815254774 /* CustomFunctions.swift */,
+				44EE37E8BF436A90A9C40AD27A182DB2 /* Expression.swift */,
+				E667D63233F61B551F3B93AF184020E0 /* Foundation.swift */,
+				5AE2EFBEFDE20C4DDD8B3398D8AE5AE8 /* fts3_tokenizer.h */,
+				B7A99896DB5D793228657B5F5EC525DA /* FTS4.swift */,
+				4B4C8E0D8DB99B4482E2549FEAE620B8 /* FTS5.swift */,
+				A2C5D76BD109C46DEC526A712FC4A8BB /* Helpers.swift */,
+				BDA86AD441076D928D0621530CD5E745 /* Operators.swift */,
+				3FCCE88ECC9D892349AB6CB3160246D9 /* Query.swift */,
+				0F331ABE5223829EDFFC088184DFA981 /* RTree.swift */,
+				FF98B7BBADF63A0AF80D7829FA6F77B9 /* Schema.swift */,
+				DA7CCC1A073BC5540EA969CA71F0C552 /* Setter.swift */,
+				B88C5FD0C85A5AE4583CC7DB512E6820 /* SQLite.h */,
+				AF7F8DDFC50FE6ACA57F6A16E253F8DC /* SQLite-Bridging.h */,
+				0E070D9E44393CD520D0B1AF87A6736D /* SQLite-Bridging.m */,
+				96600A78FEC066BF8931D7A58FBF0F16 /* Statement.swift */,
+				9DE06F129836BA95B0BE2222991D2BD0 /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				42A565AFFAD6D5669C3E9A617B18206F /* Pods */,
+				84B5F35ADC9DD7C4463852F3A39541AE /* Products */,
+				D480AEF57CF78C19FA81EFD67AC2043F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84B5F35ADC9DD7C4463852F3A39541AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7967964259DF7DBE5DC362BA626E4BB2 /* Pods_Quoterra.framework */,
+				7EF9DC971100F9CF7ED7FFB47F6AB74C /* Pods_QuoterraTests.framework */,
+				742EDC7F4E42C2632C3E361C26112A82 /* Pods_QuoterraUITests.framework */,
+				9F0C356C442AAF154AC365EEEFDF14DE /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC17465D38BF88DBA4D237431F927846 /* Pods-Quoterra */ = {
+			isa = PBXGroup;
+			children = (
+				0669AAC8F12EC91905484C166848B64B /* Info.plist */,
+				671EAFC4CB35DFF40B140EE5C0B2CDF2 /* Pods-Quoterra.modulemap */,
+				12949B7857E951CAD75AEC2F3B9C79CD /* Pods-Quoterra-acknowledgements.markdown */,
+				53FC7760C55E6A7E0D3A56B9591D30BA /* Pods-Quoterra-acknowledgements.plist */,
+				0F9D1B00F359C39E79E237C420C5E99C /* Pods-Quoterra-dummy.m */,
+				2429E7150557F013951DCC9E2D3CA03E /* Pods-Quoterra-frameworks.sh */,
+				25E0A01098295BEA1798D70BB2D03576 /* Pods-Quoterra-resources.sh */,
+				691EE1A4982C5124DE00C27DEE7BDC6E /* Pods-Quoterra-umbrella.h */,
+				35F429F138C8362395DA8B0D159DED6B /* Pods-Quoterra.debug.xcconfig */,
+				1A1AFCAA1D03B24971D0B4E947A6B5B4 /* Pods-Quoterra.release.xcconfig */,
+			);
+			name = "Pods-Quoterra";
+			path = "Target Support Files/Pods-Quoterra";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D480AEF57CF78C19FA81EFD67AC2043F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC17465D38BF88DBA4D237431F927846 /* Pods-Quoterra */,
+				311AB1E2B8E74F7A0F97E97076DAE813 /* Pods-QuoterraTests */,
+				DD33F469FADAF6FBAB6ACB45A4669657 /* Pods-QuoterraUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DD33F469FADAF6FBAB6ACB45A4669657 /* Pods-QuoterraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD915D8E8A83C651C4F0C80A3114C98E /* Info.plist */,
+				2522145D480491DE8B2018602C8F4417 /* Pods-QuoterraUITests.modulemap */,
+				DFFEEDFD728CE0A9004FAA4F1A9B72CF /* Pods-QuoterraUITests-acknowledgements.markdown */,
+				07E6A6EAA4F27D45E8EA5AF168FF6DC1 /* Pods-QuoterraUITests-acknowledgements.plist */,
+				E6397C7C351CEFDE3643AFFA9B1B98B7 /* Pods-QuoterraUITests-dummy.m */,
+				6FA777E09E122DCBC11532E082494E84 /* Pods-QuoterraUITests-frameworks.sh */,
+				3195B836BB147E2A3D595397174C2DC8 /* Pods-QuoterraUITests-resources.sh */,
+				EB322899AD912000E4534FCCF96985D4 /* Pods-QuoterraUITests-umbrella.h */,
+				E93CFF14D6D50DE31F5E7B9F989AC000 /* Pods-QuoterraUITests.debug.xcconfig */,
+				2B26320E25554B37547308F96BC358E7 /* Pods-QuoterraUITests.release.xcconfig */,
+			);
+			name = "Pods-QuoterraUITests";
+			path = "Target Support Files/Pods-QuoterraUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68210FC55B1F4EC55999137F9F2E23BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8223C4DCF0FB7E387A771A8ACE3995 /* Pods-QuoterraUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14196624428C4D908AAA717F1DDC60C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E292E8FA746E00EFA29250E9D4B8DCAF /* Pods-Quoterra-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7208BCAA5316E2CBC4F1A8479FD07D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9856FCA2426F3E35BF2BDB591CC71E00 /* fts3_tokenizer.h in Headers */,
+				5BCF348FA77647867F02DF16F75977F0 /* SQLite-Bridging.h in Headers */,
+				6F15D344E54D47ADEB32D784DCF9F46C /* SQLite.h in Headers */,
+				2D4E46A4D90C57FF280A0590359F7833 /* SQLite.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE79D03BBBD622459FC7C60E42C85B28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0853A3C20EB261B0F1B3D5DC96A24356 /* Pods-QuoterraTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		030207710D87736FC8589F49A99B8145 /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AC4FC461BCBC9D7DD82AE08EC6CD329 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				C79A02E939CFDA9B6E99B81C2DA5CAC7 /* Sources */,
+				E2956D4F885349A24CA90DDCE4498AFB /* Frameworks */,
+				DF7208BCAA5316E2CBC4F1A8479FD07D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = 9F0C356C442AAF154AC365EEEFDF14DE /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0CF7701C1098F45846B5E77C44936F18 /* Pods-Quoterra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98C9C3CEE356F22CD5C387120B9224B1 /* Build configuration list for PBXNativeTarget "Pods-Quoterra" */;
+			buildPhases = (
+				5A082B4CE5BEF01F83273874CE3D6EF4 /* Sources */,
+				8604170991ABA5F2B1F9578B38BF0E56 /* Frameworks */,
+				B14196624428C4D908AAA717F1DDC60C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BA8FD458FAA66B19030F2AD4C9853F /* PBXTargetDependency */,
+			);
+			name = "Pods-Quoterra";
+			productName = "Pods-Quoterra";
+			productReference = 7967964259DF7DBE5DC362BA626E4BB2 /* Pods_Quoterra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7550FB9FEE00EE190E8709B9247925AA /* Pods-QuoterraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1278345F83158ED76B345CE979B25086 /* Build configuration list for PBXNativeTarget "Pods-QuoterraUITests" */;
+			buildPhases = (
+				936BC49BACE9E4D69CBC50D83158DAF6 /* Sources */,
+				567DE0B6C3CF4B4C9F7414EB5E8D1E28 /* Frameworks */,
+				68210FC55B1F4EC55999137F9F2E23BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QuoterraUITests";
+			productName = "Pods-QuoterraUITests";
+			productReference = 742EDC7F4E42C2632C3E361C26112A82 /* Pods_QuoterraUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7FD22A6E0F2CB0E76F7FE1727664970F /* Pods-QuoterraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605077AE4E1029E1BEFD525A45BBC6A0 /* Build configuration list for PBXNativeTarget "Pods-QuoterraTests" */;
+			buildPhases = (
+				2B86238FD6FB00F0F0600C7DB33741AB /* Sources */,
+				DA2619A6F9BBC6AC24953B8689B1AAB8 /* Frameworks */,
+				EE79D03BBBD622459FC7C60E42C85B28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QuoterraTests";
+			productName = "Pods-QuoterraTests";
+			productReference = 7EF9DC971100F9CF7ED7FFB47F6AB74C /* Pods_QuoterraTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 84B5F35ADC9DD7C4463852F3A39541AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CF7701C1098F45846B5E77C44936F18 /* Pods-Quoterra */,
+				7FD22A6E0F2CB0E76F7FE1727664970F /* Pods-QuoterraTests */,
+				7550FB9FEE00EE190E8709B9247925AA /* Pods-QuoterraUITests */,
+				030207710D87736FC8589F49A99B8145 /* SQLite.swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B86238FD6FB00F0F0600C7DB33741AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FD9DCC118E2A5AB0BAD95573BBC182 /* Pods-QuoterraTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A082B4CE5BEF01F83273874CE3D6EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65ECAD64E56757E1E1EC3547D4EBED5E /* Pods-Quoterra-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936BC49BACE9E4D69CBC50D83158DAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD0CA0F44AFDE6E09F4BD3F23E9D00A /* Pods-QuoterraUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79A02E939CFDA9B6E99B81C2DA5CAC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D11432F6DA0E36212DEAF237E2D474B /* AggregateFunctions.swift in Sources */,
+				DA8EAB2074781F3721D192AE876FFA11 /* Blob.swift in Sources */,
+				1D08A95C51FABB9FF7AAC5267C94D1A0 /* Collation.swift in Sources */,
+				F4465A9962AF79E4EF20A7FD053F0C8B /* Connection.swift in Sources */,
+				C5570934FA467488E24936E1C606FBBD /* CoreFunctions.swift in Sources */,
+				3BE64076213F84A3B77D64769A4E3C93 /* CustomFunctions.swift in Sources */,
+				2B2454926C6EA147B4E63BD26A71568C /* Expression.swift in Sources */,
+				6E8FA52CD9A0077FE6322A0665395FFC /* Foundation.swift in Sources */,
+				D54EDF227BCA4B715BE5794FA7911642 /* FTS4.swift in Sources */,
+				DC7F105BC202899691D7F38A38FA1FE2 /* FTS5.swift in Sources */,
+				43D30F592EC3F90BA04E4517BCADBC85 /* Helpers.swift in Sources */,
+				73F87C17DB514F1C5222A877E48B9D9F /* Operators.swift in Sources */,
+				25807EE76639161E150E746ADE37971F /* Query.swift in Sources */,
+				87BD2D8B8B41B44CE89EA41234624FAB /* RTree.swift in Sources */,
+				1EF510E0A54C7E956C5DDF0EEC714CD7 /* Schema.swift in Sources */,
+				C2F4448174D230B8688769F413EECCFF /* Setter.swift in Sources */,
+				E9692BB555369148F5F08739E04BF559 /* SQLite-Bridging.m in Sources */,
+				1241219E24B0C43396A7460571CC1294 /* SQLite.swift-dummy.m in Sources */,
+				D4D3430442E818EE417654DCBD272111 /* Statement.swift in Sources */,
+				775B27D877C930E90A15C96696675210 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5BA8FD458FAA66B19030F2AD4C9853F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 030207710D87736FC8589F49A99B8145 /* SQLite.swift */;
+			targetProxy = 4A7A841DB798B8C1A9D164C9F47EACB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23457A4FB830A7835D196A76D8960477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93CFF14D6D50DE31F5E7B9F989AC000 /* Pods-QuoterraUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuoterraUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuoterraUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25D0F0C3B4996E4CA9D2B7FD5B90DF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B26320E25554B37547308F96BC358E7 /* Pods-QuoterraUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuoterraUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuoterraUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5014628E94EBA683E1EE07184C7A38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D95680245793A6818DED28B43B0299E /* Pods-QuoterraTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuoterraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuoterraTests/Pods-QuoterraTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuoterraTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80BDC12BF56767263A9E512E40E66C36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A1AFCAA1D03B24971D0B4E947A6B5B4 /* Pods-Quoterra.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quoterra/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quoterra/Pods-Quoterra.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quoterra;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		91BEB152819EE97B99AFAF601D86C2F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A385D7342976E6AB3685A10FE0983DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F429F138C8362395DA8B0D159DED6B /* Pods-Quoterra.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Quoterra/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Quoterra/Pods-Quoterra.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Quoterra;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8F468E410B2597D54E0D9A5CB207F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88BFCDC2C48A9AAC024D78C7786357F9 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FA46939AC01BBF551194DCA342460AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937A2874C9FEDCA64878ABB4C8525430 /* Pods-QuoterraTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuoterraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuoterraTests/Pods-QuoterraTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuoterraTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1278345F83158ED76B345CE979B25086 /* Build configuration list for PBXNativeTarget "Pods-QuoterraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23457A4FB830A7835D196A76D8960477 /* Debug */,
+				25D0F0C3B4996E4CA9D2B7FD5B90DF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605077AE4E1029E1BEFD525A45BBC6A0 /* Build configuration list for PBXNativeTarget "Pods-QuoterraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5014628E94EBA683E1EE07184C7A38DD /* Debug */,
+				FA46939AC01BBF551194DCA342460AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AC4FC461BCBC9D7DD82AE08EC6CD329 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BEB152819EE97B99AFAF601D86C2F4 /* Debug */,
+				D8F468E410B2597D54E0D9A5CB207F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98C9C3CEE356F22CD5C387120B9224B1 /* Build configuration list for PBXNativeTarget "Pods-Quoterra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A385D7342976E6AB3685A10FE0983DD5 /* Debug */,
+				80BDC12BF56767263A9E512E40E66C36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
