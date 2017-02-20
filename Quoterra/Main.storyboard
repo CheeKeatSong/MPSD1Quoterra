@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NuN-ki-c5D">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="Uee-cH-S9q">
+            <objects>
+                <tableViewController id="Npj-vO-Fty" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qwv-5z-vq1" customClass="HomeViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Npj-vO-Fty" id="ZFe-9p-aUp"/>
+                            <outlet property="delegate" destination="Npj-vO-Fty" id="kUU-4P-Xa7"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="khH-3m-BFH">
+                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
+                    </tabBarItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bck-uI-C63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-980"/>
+        </scene>
+        <!--Quotepedia-->
+        <scene sceneID="yPS-py-nYb">
+            <objects>
+                <tableViewController id="94C-Sn-0iX" customClass="FavouriteQuotesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JOd-jB-vPA" customClass="QuotesViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="94C-Sn-0iX" id="RAR-dJ-Me5"/>
+                            <outlet property="delegate" destination="94C-Sn-0iX" id="hs1-AX-SEY"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Quotepedia" image="dictionary" id="tsp-tq-syG">
+                        <inset key="imageInsets" minX="1" minY="4" maxX="1" maxY="0.0"/>
+                    </tabBarItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYn-8e-1J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-198"/>
+        </scene>
+        <!--Favourite-->
+        <scene sceneID="YOi-bK-L9h">
+            <objects>
+                <tableViewController id="lPA-tq-3HQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2R3-L1-22w" customClass="FavouriteViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="lPA-tq-3HQ" id="Xwd-w7-Bfe"/>
+                            <outlet property="delegate" destination="lPA-tq-3HQ" id="yjr-hC-cyN"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="star" id="Xbu-vs-GDz">
+                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
+                    </tabBarItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45d-n2-qzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="564"/>
+        </scene>
+        <!--Quote Controller-->
+        <scene sceneID="Np3-be-HoD">
+            <objects>
+                <tabBarController id="NuN-ki-c5D" customClass="QuoteController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ned-Rc-DXp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Npj-vO-Fty" kind="relationship" relationship="viewControllers" id="obo-RB-kz8"/>
+                        <segue destination="94C-Sn-0iX" kind="relationship" relationship="viewControllers" id="jm5-Hm-ZzX"/>
+                        <segue destination="lPA-tq-3HQ" kind="relationship" relationship="viewControllers" id="hdx-zP-Lmd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1h-hK-ZHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-561" y="-198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dictionary" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
+        <image name="star" width="32" height="32"/>
+    </resources>
+</document>

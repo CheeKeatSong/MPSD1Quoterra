@@ -16,13 +16,13 @@
 		D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0991E4406AF00AAA981 /* ViewController.swift */; };
 		D05AE09D1E4406AF00AAA981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05AE09B1E4406AF00AAA981 /* Main.storyboard */; };
 		D05AE09F1E4406AF00AAA981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05AE09E1E4406AF00AAA981 /* Assets.xcassets */; };
-		D05AE0A21E4406AF00AAA981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05AE0A01E4406AF00AAA981 /* LaunchScreen.storyboard */; };
 		D05AE0AD1E4406AF00AAA981 /* QuoterraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0AC1E4406AF00AAA981 /* QuoterraTests.swift */; };
 		D05AE0B81E4406B000AAA981 /* QuoterraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0B71E4406B000AAA981 /* QuoterraUITests.swift */; };
 		D05AE0C71E4406ED00AAA981 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */; };
 		D05AE0C91E44090300AAA981 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0C81E44090300AAA981 /* DBManager.swift */; };
 		D0F9339C1E5AB8B200318F3B /* QuoteCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */; };
 		D0F9339E1E5AB96A00318F3B /* SQLiteDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F9339D1E5AB96A00318F3B /* SQLiteDBManager.swift */; };
+		D0F933A11E5AC80B00318F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F933A01E5AC80B00318F3B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,6 @@
 		D05AE0991E4406AF00AAA981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D05AE09C1E4406AF00AAA981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D05AE09E1E4406AF00AAA981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D05AE0A11E4406AF00AAA981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D05AE0A31E4406AF00AAA981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05AE0A81E4406AF00AAA981 /* QuoterraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoterraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05AE0AC1E4406AF00AAA981 /* QuoterraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoterraTests.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		D05AE0C81E44090300AAA981 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCRUD.swift; sourceTree = "<group>"; };
 		D0F9339D1E5AB96A00318F3B /* SQLiteDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDBManager.swift; sourceTree = "<group>"; };
+		D0F933A01E5AC80B00318F3B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DBFA267FC623B2A405ACB4F8 /* Pods-QuoterraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoterraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuoterraUITests/Pods-QuoterraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */,
+				D05AE0991E4406AF00AAA981 /* ViewController.swift */,
+				D0F933A01E5AC80B00318F3B /* Main.storyboard */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -165,14 +167,13 @@
 		D05AE0961E4406AF00AAA981 /* Quoterra */ = {
 			isa = PBXGroup;
 			children = (
+				D0F9339F1E5AC23B00318F3B /* New Group */,
 				D0308F751E59CF60000E63F2 /* Data Model */,
 				D0308F781E5A058D000E63F2 /* Dashboard */,
 				D0308F791E5A05E6000E63F2 /* Utilities */,
-				D05AE0991E4406AF00AAA981 /* ViewController.swift */,
 				D05AE0971E4406AF00AAA981 /* AppDelegate.swift */,
 				D05AE09B1E4406AF00AAA981 /* Main.storyboard */,
 				D05AE09E1E4406AF00AAA981 /* Assets.xcassets */,
-				D05AE0A01E4406AF00AAA981 /* LaunchScreen.storyboard */,
 				D05AE0A31E4406AF00AAA981 /* Info.plist */,
 				D05AE0C81E44090300AAA981 /* DBManager.swift */,
 			);
@@ -206,6 +207,13 @@
 				A34D2D6C2F08AE8173D69DD8 /* Pods_QuoterraUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0F9339F1E5AC23B00318F3B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,7 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05AE0A21E4406AF00AAA981 /* LaunchScreen.storyboard in Resources */,
+				D0F933A11E5AC80B00318F3B /* Main.storyboard in Resources */,
 				D05AE09F1E4406AF00AAA981 /* Assets.xcassets in Resources */,
 				D05AE09D1E4406AF00AAA981 /* Main.storyboard in Resources */,
 			);
@@ -537,14 +545,6 @@
 				D05AE09C1E4406AF00AAA981 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D05AE0A01E4406AF00AAA981 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D05AE0A11E4406AF00AAA981 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
