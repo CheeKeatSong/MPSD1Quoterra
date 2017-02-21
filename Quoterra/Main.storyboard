@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="396" y="-198.35082458770617"/>
         </scene>
-        <!--View Controller-->
+        <!--Quote View Controller-->
         <scene sceneID="3nc-Mp-lel">
             <objects>
-                <viewController id="p7H-PS-Soz" sceneMemberID="viewController">
+                <viewController id="p7H-PS-Soz" customClass="QuoteViewController" customModule="Quoterra" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r2P-2c-Wfk"/>
                         <viewControllerLayoutGuide type="bottom" id="vAa-sE-DZb"/>
@@ -72,6 +72,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueSkyDarkNightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xig-W2-kDj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="01h-Vr-Zfr">
                                 <rect key="frame" x="16" y="45" width="343" height="330"/>
                                 <subviews>
@@ -84,12 +87,11 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter the Quote Here..." translatesAutoresizingMaskIntoConstraints="NO" id="7Lg-HO-Sh0">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Lg-HO-Sh0">
                                                 <rect key="frame" x="0.0" y="20.5" width="343" height="129.5"/>
-                                                <color key="tintColor" red="0.92129133661166518" green="0.92160838842391968" blue="0.46836657834883755" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textView>
                                         </subviews>
                                     </stackView>
@@ -105,7 +107,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Author's Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WVv-AS-pfu">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Author's Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WVv-AS-pfu">
                                                 <rect key="frame" x="0.0" y="21" width="343" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="TaN-Zo-h0B"/>
@@ -113,6 +115,11 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -125,7 +132,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Topic(s) of the Quote..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R27-gK-nvI">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Topic(s) of the Quote..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R27-gK-nvI">
                                                 <rect key="frame" x="0.0" y="20" width="343" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="K2x-Qo-M3k"/>
@@ -133,6 +140,11 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -146,6 +158,9 @@
                                                 <state key="normal" title="Confirm">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="setQuote:" destination="p7H-PS-Soz" eventType="touchUpInside" id="8ck-8J-0Kz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -164,9 +179,6 @@
                                     <constraint firstAttribute="trailing" secondItem="sHI-Vh-qsp" secondAttribute="trailing" id="tGX-Lc-hoC"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueSkyDarkNightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xig-W2-kDj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -179,10 +191,15 @@
                             <constraint firstItem="01h-Vr-Zfr" firstAttribute="centerX" secondItem="xig-W2-kDj" secondAttribute="centerX" id="zyc-3Y-Gf0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorTextField" destination="WVv-AS-pfu" id="kTL-Ts-ATh"/>
+                        <outlet property="quoteTxtView" destination="7Lg-HO-Sh0" id="hbm-Mg-qag"/>
+                        <outlet property="topicTextField" destination="R27-gK-nvI" id="KaP-OQ-o9g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iP-nB-PEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1373.5999999999999" y="-198.35082458770617"/>
+            <point key="canvasLocation" x="1364" y="-198"/>
         </scene>
         <!--Favourite-->
         <scene sceneID="YOi-bK-L9h">

@@ -8,20 +8,63 @@
 
 import UIKit
 
-class QuoteViewController: UIViewController {
+class QuoteViewController: UIViewController, UITextViewDelegate {
     
-    @IBOutlet weak var txtView:UITextView!
+    
+    // MARK: Properties
+    var placeHolderText = "Enter the Quote Here..."
+    
+    @IBOutlet weak var quoteTxtView:UITextView!
+    @IBOutlet weak var authorTextField: UITextField!
+    @IBOutlet weak var topicTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
-        txtView.layer.borderColor = UIColor.white.cgColor
-        txtView.layer.borderWidth = 2.3
-        txtView.layer.cornerRadius = 15
+        // Add a border to the text view
+        quoteTxtView.layer.borderColor = UIColor.white.cgColor
+        quoteTxtView.layer.borderWidth = 1.5
+        quoteTxtView.layer.cornerRadius = 5
+        
+        // Set up a placeholder for the text view
+        quoteTxtView.delegate = self
+        
+        // Change the color of the border and add it
+        authorTextField.layer.borderColor = UIColor.white.cgColor
+        authorTextField.layer.borderWidth = 1.5
+        authorTextField.layer.cornerRadius = 5
+        topicTextField.layer.borderColor = UIColor.white.cgColor
+        topicTextField.layer.borderWidth = 1.5
+        topicTextField.layer.cornerRadius = 5
     }
+    
+    // Functions to setup placeholder
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        
+        self.quoteTxtView.textColor = UIColor.white
+        
+        if self.quoteTxtView.text == placeHolderText {
+            self.quoteTxtView.text = ""
+        }
+        
+        return true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if(textView.text == "") {
+            self.quoteTxtView.text = placeHolderText
+            self.quoteTxtView.textColor = UIColor.white
+        }
+    }
+    
+    // End of the functions to setup placeholder
 
+    // MARK: Actions
+    @IBAction func setQuote(_ sender: UIButton) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -168,7 +168,6 @@
 		D05AE0961E4406AF00AAA981 /* Quoterra */ = {
 			isa = PBXGroup;
 			children = (
-				D0F9339F1E5AC23B00318F3B /* New Group */,
 				D0308F751E59CF60000E63F2 /* Data Model */,
 				D0308F781E5A058D000E63F2 /* Dashboard */,
 				D0308F791E5A05E6000E63F2 /* Utilities */,
@@ -207,13 +206,6 @@
 				A34D2D6C2F08AE8173D69DD8 /* Pods_QuoterraUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D0F9339F1E5AC23B00318F3B /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
