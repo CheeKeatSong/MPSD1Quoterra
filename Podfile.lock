@@ -1,17 +1,20 @@
 PODS:
+  - FaveButton (2.0.3)
   - IQKeyboardManagerSwift (4.0.8)
   - SQLite.swift (0.11.2):
     - SQLite.swift/standard (= 0.11.2)
   - SQLite.swift/standard (0.11.2)
 
 DEPENDENCIES:
+  - FaveButton (~> 2.0.3)
   - IQKeyboardManagerSwift
   - SQLite.swift
 
 SPEC CHECKSUMS:
+  FaveButton: cfcbc5e73da159c4f916613da5687357b5bb4783
   IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
-PODFILE CHECKSUM: 4655362b45cea6bee3cba17a8541f774227e3b52
+PODFILE CHECKSUM: 0f5a665b55faf94e2265e7ff526de8d77563a8ef
 
 COCOAPODS: 1.2.0

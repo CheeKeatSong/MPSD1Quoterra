@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FaveButton
 
 class QuoteViewController: UIViewController, UITextViewDelegate {
     

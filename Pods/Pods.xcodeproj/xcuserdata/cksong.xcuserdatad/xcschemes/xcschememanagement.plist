@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FaveButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,11 +37,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>33FC3BBDD66FCA9F34914D77C2E1781A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
 		<dict>
 			<key>primary</key>
@@ -47,12 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7C08227B6E14D87F0F5B0FD6DFFA1A3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7FD22A6E0F2CB0E76F7FE1727664970F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE1C0B4E393975D5093AAD82110058CB</key>
+		<key>94AA506B6B8CE8A87C14C8BA4884CDC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4986E68D43D90C612066C6C4D7BE781</key>
 		<dict>
 			<key>primary</key>
 			<true/>
