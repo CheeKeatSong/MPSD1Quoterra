@@ -76,7 +76,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="01h-Vr-Zfr">
-                                <rect key="frame" x="16" y="45" width="343" height="330"/>
+                                <rect key="frame" x="16" y="45" width="343" height="346"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1xd-WB-Qyk">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
@@ -148,12 +148,40 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-1W-hUO">
-                                        <rect key="frame" x="0.0" y="296" width="85" height="34"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-1W-hUO">
+                                        <rect key="frame" x="0.0" y="296" width="343" height="50"/>
                                         <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phR-ry-4QA">
+                                                <rect key="frame" x="0.0" y="8" width="85" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2u-yO-KQW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="34"/>
+                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="85" id="E4V-CE-ree"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="Confirm">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="setQuote:" destination="p7H-PS-Soz" eventType="touchUpInside" id="03A-rm-JOn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-s6-gPb">
+                                                <rect key="frame" x="146.5" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="4H8-mA-uMz"/>
+                                                </constraints>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GA-de-sts">
-                                                <rect key="frame" x="0.0" y="0.0" width="85" height="34"/>
+                                                <rect key="frame" x="258" y="8" width="85" height="34"/>
                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="85" id="jQ1-OQ-GNr"/>
+                                                </constraints>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Confirm">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,14 +192,16 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="85" id="hRk-eV-McE"/>
+                                            <constraint firstItem="phR-ry-4QA" firstAttribute="leading" secondItem="kkc-1W-hUO" secondAttribute="leading" id="OiO-J8-3Kh"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="sHI-Vh-qsp" firstAttribute="top" secondItem="01h-Vr-Zfr" secondAttribute="top" constant="165" id="BHX-Fg-xgB"/>
                                     <constraint firstItem="kkc-1W-hUO" firstAttribute="top" secondItem="01h-Vr-Zfr" secondAttribute="top" constant="296" id="DAY-7o-Zlf"/>
+                                    <constraint firstItem="kkc-1W-hUO" firstAttribute="leading" secondItem="01h-Vr-Zfr" secondAttribute="leading" id="Hp3-oj-AsH"/>
                                     <constraint firstItem="Aib-9k-TuI" firstAttribute="leading" secondItem="01h-Vr-Zfr" secondAttribute="leading" id="LM9-7i-IMb"/>
+                                    <constraint firstAttribute="trailing" secondItem="kkc-1W-hUO" secondAttribute="trailing" id="R5O-iN-Fax"/>
                                     <constraint firstAttribute="trailing" secondItem="1xd-WB-Qyk" secondAttribute="trailing" id="bHw-Gm-1Va"/>
                                     <constraint firstAttribute="trailing" secondItem="Aib-9k-TuI" secondAttribute="trailing" id="iil-mE-lXe"/>
                                     <constraint firstItem="sHI-Vh-qsp" firstAttribute="leading" secondItem="01h-Vr-Zfr" secondAttribute="leading" id="rxe-Ir-H9L"/>
