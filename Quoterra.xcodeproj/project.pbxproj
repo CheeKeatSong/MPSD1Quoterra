@@ -13,7 +13,6 @@
 		D0308F771E59CF83000E63F2 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F761E59CF83000E63F2 /* Quote.swift */; };
 		D03DF7661E5BD6BB0045444B /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DF7651E5BD6BB0045444B /* QuoteViewController.swift */; };
 		D03E4BB11E5A999E00E11033 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E4BB01E5A999E00E11033 /* Utilities.swift */; };
-		D056C0F51E5D7FD500417F29 /* FavouriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056C0F41E5D7FD500417F29 /* FavouriteControl.swift */; };
 		D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0971E4406AF00AAA981 /* AppDelegate.swift */; };
 		D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0991E4406AF00AAA981 /* ViewController.swift */; };
 		D05AE09F1E4406AF00AAA981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05AE09E1E4406AF00AAA981 /* Assets.xcassets */; };
@@ -55,7 +54,6 @@
 		D0308F761E59CF83000E63F2 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		D03DF7651E5BD6BB0045444B /* QuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		D03E4BB01E5A999E00E11033 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "../../../individual-assignment/Quotify/Utilities.swift"; sourceTree = "<group>"; };
-		D056C0F41E5D7FD500417F29 /* FavouriteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteControl.swift; sourceTree = "<group>"; };
 		D05AE0941E4406AF00AAA981 /* Quoterra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quoterra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05AE0971E4406AF00AAA981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05AE0991E4406AF00AAA981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */,
 				D05AE0991E4406AF00AAA981 /* ViewController.swift */,
 				D0F933A01E5AC80B00318F3B /* Main.storyboard */,
-				D056C0F41E5D7FD500417F29 /* FavouriteControl.swift */,
 				D03DF7651E5BD6BB0045444B /* QuoteViewController.swift */,
 			);
 			name = Dashboard;
@@ -499,7 +496,6 @@
 				D0F9339E1E5AB96A00318F3B /* SQLiteDBManager.swift in Sources */,
 				D0F9339C1E5AB8B200318F3B /* QuoteCRUD.swift in Sources */,
 				D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */,
-				D056C0F51E5D7FD500417F29 /* FavouriteControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

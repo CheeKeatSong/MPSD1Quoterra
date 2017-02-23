@@ -7,18 +7,17 @@
 //
 
 import UIKit
-import FaveButton
 
-class QuoteViewController: UIViewController, UITextViewDelegate {
-    
+class QuoteViewController: UIViewController, UITextViewDelegate{
     
     // MARK: Properties
     var placeHolderText = "Enter the Quote Here..."
     
+    //@IBOutlet var favouriteButton: FaveButton!
     @IBOutlet weak var quoteTxtView:UITextView!
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var topicTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -71,7 +70,6 @@ class QuoteViewController: UIViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

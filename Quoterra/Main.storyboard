@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="p7H-PS-Soz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="p7H-PS-Soz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -151,25 +151,36 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-1W-hUO">
                                         <rect key="frame" x="0.0" y="296" width="343" height="50"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phR-ry-4QA">
-                                                <rect key="frame" x="0.0" y="9" width="85" height="32"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2u-yO-KQW" customClass="FaveButton" customModule="FaveButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="32"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="85" id="E4V-CE-ree"/>
-                                                        </constraints>
-                                                        <state key="normal" image="EmptyStar">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="setQuote:" destination="p7H-PS-Soz" eventType="touchUpInside" id="03A-rm-JOn"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfM-w3-6oz" customClass="FaveButton" customModule="FaveButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Pak-Dd-fv3"/>
+                                                    <constraint firstAttribute="height" constant="50" id="R59-i6-eD2"/>
+                                                </constraints>
+                                                <state key="normal" image="FilledStar"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                        <color key="value" red="0.92160838840000003" green="0.76810369970000003" blue="0.2084589073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="dotFirstColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="dotSecondColor">
+                                                        <color key="value" red="0.92160838840000003" green="0.76810369970000003" blue="0.2084589073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="circleFromColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="circleToColor">
+                                                        <color key="value" red="0.92160838840000003" green="0.76810369970000003" blue="0.2084589073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-s6-gPb">
-                                                <rect key="frame" x="146.5" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="129" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="4H8-mA-uMz"/>
                                                 </constraints>
@@ -189,9 +200,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="phR-ry-4QA" firstAttribute="leading" secondItem="kkc-1W-hUO" secondAttribute="leading" id="OiO-J8-3Kh"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -206,10 +214,6 @@
                                     <constraint firstItem="1xd-WB-Qyk" firstAttribute="leading" secondItem="01h-Vr-Zfr" secondAttribute="leading" id="sdC-Vg-dGF"/>
                                     <constraint firstAttribute="trailing" secondItem="sHI-Vh-qsp" secondAttribute="trailing" id="tGX-Lc-hoC"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Gj-Ou-hXz" customClass="FavouriteControl" customModule="Quoterra" customModuleProvider="target">
-                                <rect key="frame" x="16" y="399" width="100" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -280,7 +284,7 @@
     </scenes>
     <resources>
         <image name="BlueSkyDarkNightBackground" width="282" height="500"/>
-        <image name="EmptyStar" width="32" height="32"/>
+        <image name="FilledStar" width="32" height="32"/>
         <image name="dictionary" width="32" height="32"/>
         <image name="home" width="32" height="32"/>
         <image name="star" width="32" height="32"/>
