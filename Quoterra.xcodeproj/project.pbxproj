@@ -14,12 +14,13 @@
 		D03DF7661E5BD6BB0045444B /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DF7651E5BD6BB0045444B /* QuoteViewController.swift */; };
 		D03E4BB11E5A999E00E11033 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E4BB01E5A999E00E11033 /* Utilities.swift */; };
 		D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0971E4406AF00AAA981 /* AppDelegate.swift */; };
-		D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0991E4406AF00AAA981 /* ViewController.swift */; };
 		D05AE09F1E4406AF00AAA981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05AE09E1E4406AF00AAA981 /* Assets.xcassets */; };
 		D05AE0AD1E4406AF00AAA981 /* QuoterraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0AC1E4406AF00AAA981 /* QuoterraTests.swift */; };
 		D05AE0B81E4406B000AAA981 /* QuoterraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0B71E4406B000AAA981 /* QuoterraUITests.swift */; };
 		D05AE0C71E4406ED00AAA981 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */; };
 		D05AE0C91E44090300AAA981 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AE0C81E44090300AAA981 /* DBManager.swift */; };
+		D0F21D1B1E5ECBEB00D977CE /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F21D1A1E5ECBEB00D977CE /* QuoteTableViewCell.swift */; };
+		D0F21D1D1E5ECE3D00D977CE /* Quotepedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F21D1C1E5ECE3D00D977CE /* Quotepedia.swift */; };
 		D0F9339C1E5AB8B200318F3B /* QuoteCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */; };
 		D0F9339E1E5AB96A00318F3B /* SQLiteDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F9339D1E5AB96A00318F3B /* SQLiteDBManager.swift */; };
 		D0F933A11E5AC80B00318F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F933A01E5AC80B00318F3B /* Main.storyboard */; };
@@ -56,7 +57,6 @@
 		D03E4BB01E5A999E00E11033 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "../../../individual-assignment/Quotify/Utilities.swift"; sourceTree = "<group>"; };
 		D05AE0941E4406AF00AAA981 /* Quoterra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quoterra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05AE0971E4406AF00AAA981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D05AE0991E4406AF00AAA981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D05AE09E1E4406AF00AAA981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05AE0A31E4406AF00AAA981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05AE0A81E4406AF00AAA981 /* QuoterraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoterraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +67,8 @@
 		D05AE0B91E4406B000AAA981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05AE0C61E4406ED00AAA981 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D05AE0C81E44090300AAA981 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		D0F21D1A1E5ECBEB00D977CE /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		D0F21D1C1E5ECE3D00D977CE /* Quotepedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quotepedia.swift; sourceTree = "<group>"; };
 		D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCRUD.swift; sourceTree = "<group>"; };
 		D0F9339D1E5AB96A00318F3B /* SQLiteDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDBManager.swift; sourceTree = "<group>"; };
 		D0F933A01E5AC80B00318F3B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -127,9 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				D0F9339B1E5AB8B200318F3B /* QuoteCRUD.swift */,
-				D05AE0991E4406AF00AAA981 /* ViewController.swift */,
 				D0F933A01E5AC80B00318F3B /* Main.storyboard */,
+				D0F21D1A1E5ECBEB00D977CE /* QuoteTableViewCell.swift */,
 				D03DF7651E5BD6BB0045444B /* QuoteViewController.swift */,
+				D0F21D1C1E5ECE3D00D977CE /* Quotepedia.swift */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -490,10 +493,11 @@
 			files = (
 				D0308F771E59CF83000E63F2 /* Quote.swift in Sources */,
 				D03DF7661E5BD6BB0045444B /* QuoteViewController.swift in Sources */,
-				D05AE09A1E4406AF00AAA981 /* ViewController.swift in Sources */,
 				D03E4BB11E5A999E00E11033 /* Utilities.swift in Sources */,
 				D05AE0C91E44090300AAA981 /* DBManager.swift in Sources */,
+				D0F21D1B1E5ECBEB00D977CE /* QuoteTableViewCell.swift in Sources */,
 				D0F9339E1E5AB96A00318F3B /* SQLiteDBManager.swift in Sources */,
+				D0F21D1D1E5ECE3D00D977CE /* Quotepedia.swift in Sources */,
 				D0F9339C1E5AB8B200318F3B /* QuoteCRUD.swift in Sources */,
 				D05AE0981E4406AF00AAA981 /* AppDelegate.swift in Sources */,
 			);

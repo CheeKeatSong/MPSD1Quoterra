@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="p7H-PS-Soz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NuN-ki-c5D">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <scene sceneID="Uee-cH-S9q">
             <objects>
                 <tableViewController id="Npj-vO-Fty" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qwv-5z-vq1" customClass="HomeViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qwv-5z-vq1" customClass="HomeViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,27 +36,93 @@
             <point key="canvasLocation" x="396" y="-980.05997001499259"/>
         </scene>
         <!--Quotepedia-->
-        <scene sceneID="yPS-py-nYb">
+        <scene sceneID="aM7-iw-gR5">
             <objects>
-                <tableViewController id="94C-Sn-0iX" customClass="FavouriteQuotesViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JOd-jB-vPA" customClass="QuotesViewController">
+                <viewController id="Xy0-gx-F9q" userLabel="Quotepedia" customClass="Quotepedia" customModule="Quoterra" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="G8y-my-xww">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueSkyDarkNightBackground" id="hot-c6-oUn">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        </imageView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuoteCell" id="ceq-s7-aiV" customClass="QuoteTableViewCell" customModule="Quoterra" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ceq-s7-aiV" id="O08-9C-gVc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkP-Rb-bmu">
+                                            <rect key="frame" x="8" y="8" width="359" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3f-Nr-bUo">
+                                            <rect key="frame" x="8" y="86" width="296" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNT-4X-cpb" customClass="FaveButton" customModule="FaveButton">
+                                            <rect key="frame" x="312" y="86" width="55" height="55"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <inset key="imageEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Button" image="FilledStar"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                    <color key="value" red="0.92160838840000003" green="0.76810369970000003" blue="0.2084589073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dotFirstColor">
+                                                    <color key="value" red="0.92160838840000003" green="0.76810369970000003" blue="0.2084589073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dotSecondColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="circleFromColor">
+                                                    <color key="value" red="0.92160838840000003" green="0.87170862559999995" blue="0.087313057989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="circleToColor">
+                                                    <color key="value" red="0.92129133659999995" green="0.92160838840000003" blue="0.4683665783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdf-on-4KG">
+                                            <rect key="frame" x="8" y="116" width="296" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="QuoteAuthor" destination="Y3f-Nr-bUo" id="VgL-sc-Ah7"/>
+                                    <outlet property="QuoteFaveStatus" destination="PNT-4X-cpb" id="5Dh-t9-pzw"/>
+                                    <outlet property="QuoteLabel" destination="xkP-Rb-bmu" id="bba-dI-mwd"/>
+                                    <outlet property="QuoteTopic" destination="wdf-on-4KG" id="omn-yv-sG5"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="94C-Sn-0iX" id="RAR-dJ-Me5"/>
-                            <outlet property="delegate" destination="94C-Sn-0iX" id="hs1-AX-SEY"/>
+                            <outlet property="dataSource" destination="Xy0-gx-F9q" id="Ds7-jD-F5d"/>
+                            <outlet property="delegate" destination="Xy0-gx-F9q" id="IEX-md-bbn"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Quotepedia" image="dictionary" id="tsp-tq-syG">
-                        <inset key="imageInsets" minX="1" minY="4" maxX="1" maxY="0.0"/>
+                    <tabBarItem key="tabBarItem" title="Quotepedia" image="dictionary" selectedImage="dictionary" id="wgb-jh-FxQ" userLabel="Quotepedia">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kYn-8e-1J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="tableView" destination="G8y-my-xww" id="Yal-8M-wKU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbU-Rd-fWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="396" y="-198.35082458770617"/>
         </scene>
@@ -229,6 +295,7 @@
                     </view>
                     <connections>
                         <outlet property="authorTextField" destination="WVv-AS-pfu" id="kTL-Ts-ATh"/>
+                        <outlet property="favButton" destination="yfM-w3-6oz" id="HwP-5d-gGY"/>
                         <outlet property="quoteTxtView" destination="7Lg-HO-Sh0" id="hbm-Mg-qag"/>
                         <outlet property="topicTextField" destination="R27-gK-nvI" id="KaP-OQ-o9g"/>
                     </connections>
@@ -254,8 +321,8 @@
                             <outlet property="delegate" destination="lPA-tq-3HQ" id="yjr-hC-cyN"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Favourite" image="star" id="Xbu-vs-GDz">
-                        <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="0.0"/>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="FilledStar" selectedImage="FilledStar" id="Xbu-vs-GDz">
+                        <inset key="imageInsets" minX="2" minY="5" maxX="2" maxY="0.0"/>
                     </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45d-n2-qzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,7 +340,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Npj-vO-Fty" kind="relationship" relationship="viewControllers" id="obo-RB-kz8"/>
-                        <segue destination="94C-Sn-0iX" kind="relationship" relationship="viewControllers" id="jm5-Hm-ZzX"/>
+                        <segue destination="Xy0-gx-F9q" kind="relationship" relationship="viewControllers" id="6w9-H8-3Ju"/>
                         <segue destination="lPA-tq-3HQ" kind="relationship" relationship="viewControllers" id="hdx-zP-Lmd"/>
                     </connections>
                 </tabBarController>
@@ -287,6 +354,5 @@
         <image name="FilledStar" width="32" height="32"/>
         <image name="dictionary" width="32" height="32"/>
         <image name="home" width="32" height="32"/>
-        <image name="star" width="32" height="32"/>
     </resources>
 </document>

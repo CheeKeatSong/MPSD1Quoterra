@@ -7,20 +7,25 @@
 //
 
 import UIKit
+import FaveButton
 
-class QuoteViewController: UIViewController, UITextViewDelegate{
+class QuoteViewController: UIViewController, UITextViewDelegate, FaveButtonDelegate{
     
     // MARK: Properties
     var placeHolderText = "Enter the Quote Here..."
+    var faveValue = false
     
     //@IBOutlet var favouriteButton: FaveButton!
     @IBOutlet weak var quoteTxtView:UITextView!
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var topicTextField: UITextField!
+    @IBOutlet weak var favButton: FaveButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        favButton.delegate = self
         
         // Add a border to the text view
         quoteTxtView.layer.borderColor = UIColor.white.cgColor
@@ -39,10 +44,17 @@ class QuoteViewController: UIViewController, UITextViewDelegate{
         topicTextField.layer.cornerRadius = 5
     }
     
+    func faveButton(_ faveButton: FaveButton, didSelected selected: Bool) {
+        if selected == true {
+            faveValue = true
+        } else {
+            faveValue = false
+        }
+    }
+    
     // Functions to setup placeholder
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-        
-        self.quoteTxtView.textColor = UIColor.white
+                self.quoteTxtView.textColor = UIColor.white
         
         if self.quoteTxtView.text == placeHolderText {
             self.quoteTxtView.text = ""

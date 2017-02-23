@@ -6,7 +6,7 @@ target 'Quoterra' do
   use_frameworks!
   pod 'SQLite.swift'
   pod 'IQKeyboardManagerSwift'
-  pod 'FaveButton', '~> 2.0.3'
+  pod 'FaveButton', '~> 2.0.3'	
   # Pods for Quoterra
 
   target 'QuoterraTests' do
