@@ -9,7 +9,7 @@
 import UIKit
 import FaveButton
 
-class QuoteViewController: UIViewController, UITextViewDelegate, FaveButtonDelegate{
+class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate, FaveButtonDelegate{
     
     // MARK: Properties
     var placeHolderText = "Enter the Quote Here..."
