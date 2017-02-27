@@ -360,7 +360,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Quote" id="DMi-58-EH6">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="JdD-VS-HiS"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="7lD-XS-7c3"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="7lD-XS-7c3">
+                            <connections>
+                                <segue destination="iMe-Rk-fVZ" kind="unwind" unwindAction="unwindToQuotepediaWithSender:" id="noD-YL-qKQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="authorTextField" destination="WVv-AS-pfu" id="kTL-Ts-ATh"/>
@@ -372,6 +376,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iP-nB-PEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="iMe-Rk-fVZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3242.4000000000001" y="-198.35082458770617"/>
         </scene>

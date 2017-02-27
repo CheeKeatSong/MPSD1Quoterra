@@ -13,6 +13,8 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
     // MARK: Properties
     @IBOutlet weak var tableView:UITableView!
     
+    var arrayOfQuotes:[Quote] = QuoteCRUD.findAll()
+    
     override func viewDidLoad() {
         
         // Add a background view to the table view
@@ -31,16 +33,16 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
         if let sourceViewController = sender.source as? QuoteViewController, let quote = sourceViewController.quote {
             
             // Add a new quote.
-            let newIndexPath = IndexPath(row: meals.count, section: 0)
+            let newIndexPath = IndexPath(row: arrayOfQuotes.count, section: 0)
             
-            meals.append(meal)
+            arrayOfQuotes.append(quote)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
     
     @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return arrayOfQuotes.count
     }
     
     
@@ -51,10 +53,19 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCell", for: indexPath) as! QuoteTableViewCell
         
-        cell.QuoteLabel.text = "HELLO WORLD"
-        cell.QuoteAuthor.text = "CK"
-        cell.QuoteTopic.text = "Greet"
-        cell.QuoteTopic.isHighlighted = true
+//        cell.QuoteLabel.text = "HELLO WORLD"
+//        cell.QuoteAuthor.text = "CK"
+//        cell.QuoteTopic.text = "Greet"
+//        cell.QuoteTopic.isHighlighted = true
+        
+        cell.QuoteLabel.lineBreakMode = .byWordWrapping
+        cell.QuoteLabel.numberOfLines = 0
+        cell.QuoteLabel.font = UIFont(name: "BebasNeue Bold", size: 16.0)
+        
+        cell.QuoteLabel.text = arrayOfQuotes[indexPath.row].quotes
+        cell.QuoteAuthor.text = arrayOfQuotes[indexPath.row].quoteAuthor
+        cell.QuoteTopic.text = arrayOfQuotes[indexPath.row].quoteTopic
+        cell.QuoteFaveStatus.isHighlighted = arrayOfQuotes[indexPath.row].quoteFavourite!
         
         return cell
     }
