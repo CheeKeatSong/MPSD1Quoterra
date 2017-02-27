@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 import FaveButton
 
 class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate, FaveButtonDelegate{
@@ -15,11 +16,16 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     var placeHolderText = "Enter the Quote Here..."
     var faveValue = false
     
-    //@IBOutlet var favouriteButton: FaveButton!
+    // @IBOutlet var favouriteButton: FaveButton!
     @IBOutlet weak var quoteTxtView:UITextView!
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var topicTextField: UITextField!
     @IBOutlet weak var favButton: FaveButton!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var quoteIDLabel: UILabel!
+    
+    // Quote data model
+    var quote: Quote?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,14 +88,26 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         // Dispose of any resources that can be recreated.
     }
     
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        super.prepare(for: segue, sender: sender)
+        
+        // Configure the destination view controller only when the save button is pressed.
+        guard let button = sender as? UIBarButtonItem, button === saveButton else {
+            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            return
+        }
+        
+        let quoteID: Int64? = Int64(quoteIDLabel.text!)
+        let quotes = quoteTxtView.text ?? ""
+        let author = authorTextField.text ?? ""
+        let topic = topicTextField.text ?? ""
+        let quoteFave = faveValue
+        
+        // Set the quote to be passed to QuoteTableViewController after the unwind segue.
+        quote = Quote(quoteID: quoteID!,quotes: quotes, quoteAuthor: author, quoteTopic: topic, quoteFavourite: quoteFave)
     }
-    */
 
 }

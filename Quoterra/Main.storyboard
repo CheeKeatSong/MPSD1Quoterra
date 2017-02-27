@@ -164,7 +164,13 @@
                             <outlet property="delegate" destination="Xy0-gx-F9q" id="IEX-md-bbn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xxo-FU-oEH"/>
+                    <navigationItem key="navigationItem" title="Quotepedia" id="xxo-FU-oEH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XJC-TT-f6k">
+                            <connections>
+                                <segue destination="3uh-Rb-VdX" kind="presentation" identifier="AddQuote" id="SOe-2F-aJT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="G8y-my-xww" id="Yal-8M-wKU"/>
                     </connections>
@@ -173,7 +179,7 @@
             </objects>
             <point key="canvasLocation" x="1335.2" y="-198.35082458770617"/>
         </scene>
-        <!--Quote View Controller-->
+        <!--New Quote-->
         <scene sceneID="3nc-Mp-lel">
             <objects>
                 <viewController id="p7H-PS-Soz" customClass="QuoteViewController" customModule="Quoterra" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,24 +195,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="01h-Vr-Zfr">
-                                <rect key="frame" x="16" y="45" width="343" height="346"/>
+                                <rect key="frame" x="16" y="79" width="343" height="346"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1xd-WB-Qyk">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcI-TC-X05">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyv-db-8LJ" userLabel="QuoteID">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcI-TC-X05">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Lg-HO-Sh0">
-                                                <rect key="frame" x="0.0" y="20.5" width="343" height="129.5"/>
+                                                <rect key="frame" x="0.0" y="21" width="343" height="129"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textView>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="nyv-db-8LJ"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sHI-Vh-qsp">
                                         <rect key="frame" x="0.0" y="165" width="343" height="51"/>
@@ -332,24 +350,30 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xig-W2-kDj" firstAttribute="leading" secondItem="Mhz-Gw-U96" secondAttribute="leading" id="24S-n4-6Md"/>
-                            <constraint firstItem="01h-Vr-Zfr" firstAttribute="top" secondItem="r2P-2c-Wfk" secondAttribute="bottom" constant="25" id="IpQ-6h-dNs"/>
                             <constraint firstItem="01h-Vr-Zfr" firstAttribute="trailing" secondItem="Mhz-Gw-U96" secondAttribute="trailingMargin" id="JSO-TR-mjz"/>
                             <constraint firstItem="xig-W2-kDj" firstAttribute="top" secondItem="Mhz-Gw-U96" secondAttribute="top" id="N3c-qa-hkR"/>
+                            <constraint firstItem="01h-Vr-Zfr" firstAttribute="top" secondItem="r2P-2c-Wfk" secondAttribute="bottom" constant="15" id="ak6-wD-EMK"/>
                             <constraint firstItem="xig-W2-kDj" firstAttribute="bottom" secondItem="vAa-sE-DZb" secondAttribute="top" id="f08-uC-6Rw"/>
                             <constraint firstItem="01h-Vr-Zfr" firstAttribute="leading" secondItem="Mhz-Gw-U96" secondAttribute="leadingMargin" id="nJO-CM-wRl"/>
                             <constraint firstItem="01h-Vr-Zfr" firstAttribute="centerX" secondItem="xig-W2-kDj" secondAttribute="centerX" id="zyc-3Y-Gf0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="New Quote" id="DMi-58-EH6">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="JdD-VS-HiS"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="7lD-XS-7c3"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="authorTextField" destination="WVv-AS-pfu" id="kTL-Ts-ATh"/>
                         <outlet property="favButton" destination="yfM-w3-6oz" id="HwP-5d-gGY"/>
+                        <outlet property="quoteIDLabel" destination="nyv-db-8LJ" id="BbD-CL-iW4"/>
                         <outlet property="quoteTxtView" destination="7Lg-HO-Sh0" id="hbm-Mg-qag"/>
+                        <outlet property="saveButton" destination="7lD-XS-7c3" id="QLt-QN-gxn"/>
                         <outlet property="topicTextField" destination="R27-gK-nvI" id="KaP-OQ-o9g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iP-nB-PEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2303.1999999999998" y="-198.35082458770617"/>
+            <point key="canvasLocation" x="3242.4000000000001" y="-198.35082458770617"/>
         </scene>
         <!--Favourite-->
         <scene sceneID="YOi-bK-L9h">
@@ -403,7 +427,7 @@
                         <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gIp-NZ-iIL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gIp-NZ-iIL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -415,6 +439,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dK6-Go-7NF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="396" y="-198.35082458770617"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RF2-BL-nfh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3uh-Rb-VdX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="x28-k9-ZQE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p7H-PS-Soz" kind="relationship" relationship="rootViewController" id="rqt-fE-HRO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9M-o3-Foj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2303.1999999999998" y="-198.35082458770617"/>
         </scene>
     </scenes>
     <resources>

@@ -26,6 +26,18 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
         
     }
     
+    // MARK: Actions
+    @IBAction func unwindToQuotepedia(sender: UIStoryboardSegue){
+        if let sourceViewController = sender.source as? QuoteViewController, let quote = sourceViewController.quote {
+            
+            // Add a new quote.
+            let newIndexPath = IndexPath(row: meals.count, section: 0)
+            
+            meals.append(meal)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
     @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
