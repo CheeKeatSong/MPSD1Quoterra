@@ -53,8 +53,10 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     func faveButton(_ faveButton: FaveButton, didSelected selected: Bool) {
         if selected == true {
             faveValue = true
+            print (faveValue)
         } else {
             faveValue = false
+            print (faveValue)
         }
     }
     
@@ -100,14 +102,14 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
             return
         }
         
-        let quoteID: Int64? = Int64(quoteIDLabel.text!)
-        let quotes = quoteTxtView.text ?? ""
-        let author = authorTextField.text ?? ""
-        let topic = topicTextField.text ?? ""
-        let quoteFave = faveValue
+        quote?.quoteID = Int64(quoteIDLabel.text!) ?? nil
+        quote?.quotes = quoteTxtView.text ?? ""
+        quote?.quoteAuthor = authorTextField.text ?? ""
+        quote?.quoteTopic = topicTextField.text ?? ""
+        quote?.quoteFavourite = faveValue ?? false
         
-        // Set the quote to be passed to QuoteTableViewController after the unwind segue.
-        quote = Quote(quoteID: quoteID!,quotes: quotes, quoteAuthor: author, quoteTopic: topic, quoteFavourite: quoteFave)
+        quote = Quote()
+        
     }
 
 }

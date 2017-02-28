@@ -45,7 +45,5 @@ class Quote {
         self.quoteAuthor = quoteAuthor
         self.quoteTopic = quoteTopic
         self.quoteFavourite = quoteFavourite
-    }
+    }				
 }
-
-
