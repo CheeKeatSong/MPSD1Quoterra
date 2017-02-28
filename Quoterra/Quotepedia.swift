@@ -12,6 +12,7 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     // MARK: Properties
     @IBOutlet weak var tableView:UITableView!
+   
     
     var arrayOfQuotes:[Quote] = QuoteCRUD.findAll()
     
@@ -58,6 +59,7 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
 //        cell.QuoteTopic.text = "Greet"
 //        cell.QuoteTopic.isHighlighted = true
         
+        
         cell.QuoteLabel.lineBreakMode = .byWordWrapping
         cell.QuoteLabel.numberOfLines = 0
         cell.QuoteLabel.font = UIFont(name: "BebasNeue Bold", size: 16.0)
@@ -67,8 +69,25 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
         cell.QuoteTopic.text = arrayOfQuotes[indexPath.row].quoteTopic
         cell.QuoteFaveStatus.isHighlighted = arrayOfQuotes[indexPath.row].quoteFavourite!
         
+        if(cell.isSelected){
+            cell.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.1)
+        }else{
+            cell.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
+        }
+        
         return cell
     }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let selectedCell:UITableViewCell! = tableView.cellForRow(at: indexPath)!
+//        selectedCell.contentView.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.01)
+//    }
+    
+//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+//        let cellToDeselect: UITableViewCell = tableView.cellForRow(at: indexPath)!
+//        cellToDeselect.contentView.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
+//
+//    }
 
 
     /*
