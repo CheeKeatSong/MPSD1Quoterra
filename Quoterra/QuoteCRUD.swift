@@ -43,8 +43,8 @@ class QuoteCRUD: DataHelperProtocol {
     static func insert(item: Quote) {
         if Utilities.isObjectNil(object: item) {
             //Delete old entry to insert new one
-            delete()
-            
+            //delete()
+            print("Item is not empty")
             do {
                 try db.createDB().run(quote.insert(
                     quotes <- item.quotes!,
@@ -115,7 +115,7 @@ class QuoteCRUD: DataHelperProtocol {
                 )!)
             }
         } catch let error as NSError {
-            print("Delete failed: \(error)")
+            print("Select failed: \(error)")
         }
         
         return quoteArray

@@ -16,6 +16,10 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     var arrayOfQuotes:[Quote] = QuoteCRUD.findAll()
     
+    override func viewDidAppear(_ animated: Bool) {
+        arrayOfQuotes = QuoteCRUD.findAll()
+    }
+    
     override func viewDidLoad() {
         
         // Add a background view to the table view
@@ -26,7 +30,6 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
         imageView.contentMode = .scaleAspectFit
         
         tableView.backgroundView = imageView
-        
     }
     
     // MARK: Actions
@@ -69,25 +72,24 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
         cell.QuoteTopic.text = arrayOfQuotes[indexPath.row].quoteTopic
         cell.QuoteFaveStatus.isHighlighted = arrayOfQuotes[indexPath.row].quoteFavourite!
         
-        if(cell.isSelected){
-            cell.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.1)
-        }else{
-            cell.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
-        }
+//        if(cell.isSelected){
+//            cell.backgroundColor = UIColor.green //UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.1)
+//        }else{
+//            cell.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
+//        }
         
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectedCell:UITableViewCell! = tableView.cellForRow(at: indexPath)!
-//        selectedCell.contentView.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.01)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell:UITableViewCell! = tableView.cellForRow(at: indexPath)!
+            selectedCell.backgroundColor = UIColor.init(red: 255, green: 255, blue: 255, alpha: 0.1)
+    }
     
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        let cellToDeselect: UITableViewCell = tableView.cellForRow(at: indexPath)!
-//        cellToDeselect.contentView.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
-//
-//    }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cellToDeselect: UITableViewCell = tableView.cellForRow(at: indexPath)!
+            cellToDeselect.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
+    }
 
 
     /*

@@ -25,7 +25,7 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     @IBOutlet weak var quoteIDLabel: UILabel!
     
     // Quote data model
-    var quote: Quote?
+    var quote: Quote? = Quote()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,18 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         topicTextField.layer.borderColor = UIColor.white.cgColor
         topicTextField.layer.borderWidth = 1.5
         topicTextField.layer.cornerRadius = 5
+    }
+    
+    @IBAction func homeBtn(_ sender:AnyObject) {
+        quote?.quotes = quoteTxtView.text ?? ""
+        quote?.quoteAuthor = authorTextField.text ?? ""
+        quote?.quoteTopic = topicTextField.text ?? ""
+        quote?.quoteFavourite = faveValue
+        
+        QuoteCRUD.insert(item: quote!)
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Quotepedia") as! Quotepedia
+        self.present(vc, animated: true, completion: nil)
     }
     
     func faveButton(_ faveButton: FaveButton, didSelected selected: Bool) {
@@ -92,24 +104,18 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     
     
     // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        super.prepare(for: segue, sender: sender)
-        
-        // Configure the destination view controller only when the save button is pressed.
-        guard let button = sender as? UIBarButtonItem, button === saveButton else {
-            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
-            return
-        }
-        
-        quote?.quoteID = Int64(quoteIDLabel.text!) ?? nil
-        quote?.quotes = quoteTxtView.text ?? ""
-        quote?.quoteAuthor = authorTextField.text ?? ""
-        quote?.quoteTopic = topicTextField.text ?? ""
-        quote?.quoteFavourite = faveValue ?? false
-        
-        quote = Quote()
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        super.prepare(for: segue, sender: sender)
+//        
+//        // Configure the destination view controller only when the save button is pressed.
+//        guard let button = sender as? UIBarButtonItem, button === saveButton else {
+//            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+//            return
+//        }
+//        
+//        
+//        
+//    }
 
 }

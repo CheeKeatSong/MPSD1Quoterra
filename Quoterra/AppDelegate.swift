@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         IQKeyboardManager.sharedManager().enable = true
+        SQLiteDBManager.makeDB()
         
         return true
     }

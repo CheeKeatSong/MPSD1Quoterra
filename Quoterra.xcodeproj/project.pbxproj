@@ -133,6 +133,7 @@
 				D0F21D1A1E5ECBEB00D977CE /* QuoteTableViewCell.swift */,
 				D03DF7651E5BD6BB0045444B /* QuoteViewController.swift */,
 				D0F21D1C1E5ECE3D00D977CE /* Quotepedia.swift */,
+				D0308F791E5A05E6000E63F2 /* Utilities */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -173,7 +174,6 @@
 			children = (
 				D0308F751E59CF60000E63F2 /* Data Model */,
 				D0308F781E5A058D000E63F2 /* Dashboard */,
-				D0308F791E5A05E6000E63F2 /* Utilities */,
 				D05AE0971E4406AF00AAA981 /* AppDelegate.swift */,
 				D05AE09E1E4406AF00AAA981 /* Assets.xcassets */,
 				D05AE0A31E4406AF00AAA981 /* Info.plist */,
