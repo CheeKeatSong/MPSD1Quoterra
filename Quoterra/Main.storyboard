@@ -156,6 +156,7 @@
                                     <outlet property="QuoteFaveStatus" destination="PNT-4X-cpb" id="5Dh-t9-pzw"/>
                                     <outlet property="QuoteLabel" destination="xkP-Rb-bmu" id="bba-dI-mwd"/>
                                     <outlet property="QuoteTopic" destination="wdf-on-4KG" id="omn-yv-sG5"/>
+                                    <segue destination="p7H-PS-Soz" kind="show" identifier="showDetails" id="d5d-xh-vh5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -192,7 +193,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueSkyDarkNightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xig-W2-kDj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="01h-Vr-Zfr">
                                 <rect key="frame" x="16" y="79" width="343" height="346"/>
@@ -200,13 +201,6 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1xd-WB-Qyk">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyv-db-8LJ" userLabel="QuoteID">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcI-TC-X05">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -220,11 +214,6 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textView>
                                         </subviews>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="nyv-db-8LJ"/>
-                                            </mask>
-                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sHI-Vh-qsp">
                                         <rect key="frame" x="0.0" y="165" width="343" height="51"/>
@@ -359,22 +348,27 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Quote" id="DMi-58-EH6">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="JdD-VS-HiS"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="JdD-VS-HiS">
+                            <connections>
+                                <action selector="cancel:" destination="p7H-PS-Soz" id="JYk-sJ-ZSr"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="wfk-ps-Rw0">
                             <connections>
-                                <action selector="homeBtn:" destination="p7H-PS-Soz" id="HP4-7v-bBE"/>
+                                <segue destination="kgc-UX-Uwu" kind="unwind" unwindAction="unwindToQuotepediaWithSender:" id="Dh2-Eh-BKE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="authorTextField" destination="WVv-AS-pfu" id="kTL-Ts-ATh"/>
                         <outlet property="favButton" destination="yfM-w3-6oz" id="HwP-5d-gGY"/>
-                        <outlet property="quoteIDLabel" destination="nyv-db-8LJ" id="BbD-CL-iW4"/>
                         <outlet property="quoteTxtView" destination="7Lg-HO-Sh0" id="hbm-Mg-qag"/>
+                        <outlet property="saveButton" destination="wfk-ps-Rw0" id="Mop-V2-9CX"/>
                         <outlet property="topicTextField" destination="R27-gK-nvI" id="KaP-OQ-o9g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iP-nB-PEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kgc-UX-Uwu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3242.4000000000001" y="-198.35082458770617"/>
         </scene>
@@ -459,7 +453,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9M-o3-Foj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2303.1999999999998" y="-198.35082458770617"/>
+            <point key="canvasLocation" x="2289" y="138"/>
         </scene>
     </scenes>
     <resources>
@@ -468,4 +462,7 @@
         <image name="dictionary" width="32" height="32"/>
         <image name="home" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="d5d-xh-vh5"/>
+    </inferredMetricsTieBreakers>
 </document>

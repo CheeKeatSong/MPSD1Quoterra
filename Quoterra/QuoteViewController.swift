@@ -21,8 +21,9 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var topicTextField: UITextField!
     @IBOutlet weak var favButton: FaveButton!
-    @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var quoteIDLabel: UILabel!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var quoteID: UILabel!
     
     // Quote data model
     var quote: Quote? = Quote()
@@ -48,19 +49,73 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         topicTextField.layer.borderColor = UIColor.white.cgColor
         topicTextField.layer.borderWidth = 1.5
         topicTextField.layer.cornerRadius = 5
+        
+        // Set up view for existing quote
+        if let quote = quote {
+            navigationController?.title = ""
+            quoteTxtView.text = quote.quotes
+            authorTextField.text = quote.quoteAuthor
+            topicTextField.text = quote.quoteTopic
+            favButton.isSelected = quote.quoteFavourite ?? false
+        }
+        
+        updateSaveButton()
+        
+        // Forced the navigation not to disappear
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    @IBAction func homeBtn(_ sender:AnyObject) {
+//    override func viewWillDisappear(_ animated: Bool) {
+//        
+//        super.viewWillDisappear(animated)
+//        self.navigationController?.isNavigationBarHidden = false
+//    }
+    
+//    @IBAction func saveQuote(_ sender: Any) {
+//        quote?.quotes = quoteTxtView.text ?? ""
+//        quote?.quoteAuthor = authorTextField.text ?? ""
+//        quote?.quoteTopic = topicTextField.text ?? ""
+//        quote?.quoteFavourite = faveValue
+//        
+//        QuoteCRUD.insert(item: quote!)
+//        
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Quotepedia") as! Quotepedia
+//        self.present(vc, animated: true, completion: nil)
+//    }
+    
+    @IBAction func cancel(_ sender: Any) {
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Quotepedia") as! Quotepedia
+//        self.present(vc, animated: true, completion: nil)
+          navigationController?.popViewController(animated: true)
+          dismiss(animated: true, completion: nil)
+    }
+    
+    // This method lets you configure a view controller before it's presented.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        super.prepare(for: segue, sender: sender)
+        
+        // Configure the destination view controller only when the save button is pressed.
+        guard let button = sender as? UIBarButtonItem, button === saveButton else {
+            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            return
+        }
+        
         quote?.quotes = quoteTxtView.text ?? ""
         quote?.quoteAuthor = authorTextField.text ?? ""
         quote?.quoteTopic = topicTextField.text ?? ""
         quote?.quoteFavourite = faveValue
         
-        QuoteCRUD.insert(item: quote!)
+        if (quote?.quoteID == nil){
+            QuoteCRUD.insert(item: quote!)
+        }
+        else{
+            QuoteCRUD.update(item: quote!)
+        }
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Quotepedia") as! Quotepedia
-        self.present(vc, animated: true, completion: nil)
     }
+    
     
     func faveButton(_ faveButton: FaveButton, didSelected selected: Bool) {
         if selected == true {
@@ -72,25 +127,39 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         }
     }
     
-    // Functions to setup placeholder
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        saveButton.isEnabled = false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateSaveButton()
+    }
+
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-                self.quoteTxtView.textColor = UIColor.white
+        
+        // Text View placeholder
+        self.quoteTxtView.textColor = UIColor.white
         
         if self.quoteTxtView.text == placeHolderText {
             self.quoteTxtView.text = ""
         }
         
+        // Save button disabled when typing
+        saveButton.isEnabled = false
+        
         return true
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
+        
+        // Textview place holder
         if(textView.text == "") {
             self.quoteTxtView.text = placeHolderText
             self.quoteTxtView.textColor = UIColor.white
         }
+        
+        updateSaveButton()
     }
-    
-    // End of the functions to setup placeholder
 
     // MARK: Actions
     @IBAction func setQuote(_ sender: UIButton) {
@@ -102,20 +171,14 @@ class QuoteViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         // Dispose of any resources that can be recreated.
     }
     
-    
-    // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        super.prepare(for: segue, sender: sender)
-//        
-//        // Configure the destination view controller only when the save button is pressed.
-//        guard let button = sender as? UIBarButtonItem, button === saveButton else {
-//            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
-//            return
-//        }
-//        
-//        
-//        
-//    }
+    // MARK: Private Methods
+    private func updateSaveButton(){
+        // Disable the Save button if the text field is empty.
+        let quoteText = quoteTxtView.text ?? ""
+        let quoteAuthorText = authorTextField.text ?? ""
+        let quoteTopicText = topicTextField.text ?? ""
+        
+        saveButton.isEnabled = (!quoteText.isEmpty) && (!quoteAuthorText.isEmpty) && (!quoteTopicText.isEmpty)
+    }
 
 }

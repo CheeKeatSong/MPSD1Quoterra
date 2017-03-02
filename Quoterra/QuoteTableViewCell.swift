@@ -20,6 +20,7 @@ class QuoteTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         QuoteFaveStatus.imageView?.contentMode = .scaleAspectFit
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

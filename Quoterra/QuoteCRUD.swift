@@ -92,7 +92,17 @@ class QuoteCRUD: DataHelperProtocol {
     }
     
     static func update(item: Quote) {
-        
+        do {
+            let query = quote.filter(quoteID == item.quoteID!)
+            try db.createDB().run(query.update(
+                quotes <- item.quotes!,
+                quoteAuthor <- item.quoteAuthor!,
+                quoteTopic <- item.quoteTopic!,
+                quoteFavourite <- item.quoteFavourite!
+            ))
+        } catch let error as NSError {
+            print("Update failed: \(error)")
+        }
     }
     
     static func find() -> Quote {

@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import os.log
 
 class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     // MARK: Properties
     @IBOutlet weak var tableView:UITableView!
    
-    
     var arrayOfQuotes:[Quote] = QuoteCRUD.findAll()
     
     override func viewDidAppear(_ animated: Bool) {
-        arrayOfQuotes = QuoteCRUD.findAll()
+//        arrayOfQuotes = QuoteCRUD.findAll()
     }
     
     override func viewDidLoad() {
@@ -30,18 +30,25 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
         imageView.contentMode = .scaleAspectFit
         
         tableView.backgroundView = imageView
+        
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     // MARK: Actions
     @IBAction func unwindToQuotepedia(sender: UIStoryboardSegue){
-        if let sourceViewController = sender.source as? QuoteViewController, let quote = sourceViewController.quote {
-            
-            // Add a new quote.
-            let newIndexPath = IndexPath(row: arrayOfQuotes.count, section: 0)
-            
-            arrayOfQuotes.append(quote)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
-        }
+
+//         Add a new quote.
+        arrayOfQuotes = QuoteCRUD.findAll()
+//        let newIndexPath = IndexPath(row: arrayOfQuotes.count - 1, section: 0)
+//        
+//        tableView.insertRows(at: [newIndexPath], with: .automatic)
+        tableView.reloadData();
     }
     
     @available(iOS 2.0, *)
@@ -57,12 +64,6 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCell", for: indexPath) as! QuoteTableViewCell
         
-//        cell.QuoteLabel.text = "HELLO WORLD"
-//        cell.QuoteAuthor.text = "CK"
-//        cell.QuoteTopic.text = "Greet"
-//        cell.QuoteTopic.isHighlighted = true
-        
-        
         cell.QuoteLabel.lineBreakMode = .byWordWrapping
         cell.QuoteLabel.numberOfLines = 0
         cell.QuoteLabel.font = UIFont(name: "BebasNeue Bold", size: 16.0)
@@ -70,27 +71,49 @@ class Quotepedia: UIViewController, UITableViewDelegate,UITableViewDataSource {
         cell.QuoteLabel.text = arrayOfQuotes[indexPath.row].quotes
         cell.QuoteAuthor.text = arrayOfQuotes[indexPath.row].quoteAuthor
         cell.QuoteTopic.text = arrayOfQuotes[indexPath.row].quoteTopic
-        cell.QuoteFaveStatus.isHighlighted = arrayOfQuotes[indexPath.row].quoteFavourite!
-        
-//        if(cell.isSelected){
-//            cell.backgroundColor = UIColor.green //UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.1)
-//        }else{
-//            cell.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
-//        }
+        cell.QuoteFaveStatus.isSelected = arrayOfQuotes[indexPath.row].quoteFavourite!
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCell:UITableViewCell! = tableView.cellForRow(at: indexPath)!
-            selectedCell.backgroundColor = UIColor.init(red: 255, green: 255, blue: 255, alpha: 0.1)
-    }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cellToDeselect: UITableViewCell = tableView.cellForRow(at: indexPath)!
-            cellToDeselect.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let selectedCell:UITableViewCell! = tableView.cellForRow(at: indexPath)!
+//            selectedCell.backgroundColor = UIColor.init(red: 80, green: 80, blue: 80, alpha: 0.1)
+//    }
+//    
+//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+//        let cellToDeselect: UITableViewCell = tableView.cellForRow(at: indexPath)!
+//            cellToDeselect.backgroundColor = UIColor.clear
+//    }
 
+    //MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch (segue.identifier ?? "") {
+        case "AddQuote":
+            os_log("Adding a new meal.", log: OSLog.default, type: .debug)
+            
+        case "showDetails":
+            guard let quoteDetailsViewController = segue.destination as? QuoteViewController else {
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            
+            guard let selectedQuoteCell = sender as? QuoteTableViewCell else {
+                fatalError("Unexpected sender: \(sender)")
+            }
+            
+            guard let indexPath = tableView.indexPath(for: selectedQuoteCell) else {
+                fatalError("The selected cell is not being displayed by the table")
+            }
+            
+            let selectedQuote = arrayOfQuotes[indexPath.row]
+            quoteDetailsViewController.quote = selectedQuote
+            
+        default:
+            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+        }
+    }
 
     /*
     // Only override draw() if you perform custom drawing.
