@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "36249C5B6EDE75D3361DD0444A4E8BFA1BFC4692",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "36249C5B6EDE75D3361DD0444A4E8BFA1BFC4692" : 9223372036854775807,
+    "914D79451AA8077A083E13E539C5824ED2C8BB6D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AB04E033-5B49-4D5B-992B-7C2197F224BD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "36249C5B6EDE75D3361DD0444A4E8BFA1BFC4692" : "Quoterra\/",
+    "914D79451AA8077A083E13E539C5824ED2C8BB6D" : "..\/individual-assignment"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Quoterra",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Quoterra.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/CKSong\/quoterrampsd1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "36249C5B6EDE75D3361DD0444A4E8BFA1BFC4692"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/edwin_cheong\/individual-assignment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "914D79451AA8077A083E13E539C5824ED2C8BB6D"
+    }
+  ]
+}
