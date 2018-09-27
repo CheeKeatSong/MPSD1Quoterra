@@ -1,6 +1,6 @@
 # MPSD1Quoterra
 
-Into philosophy? or you need some motivation to boost you? Get a daily famous quote iOS app.
+Into philosophy? or you are looking to be inspired? Get a daily famous quote iOS app.
 
 ## Features
 
