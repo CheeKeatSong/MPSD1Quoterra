@@ -1,4 +1,4 @@
-# MPSD1Quoterra
+# Quoterra
 
 Into philosophy? or you are looking to be inspired? Get a daily famous quote iOS app.
 
